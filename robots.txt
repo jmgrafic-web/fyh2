@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Disallow admin / utility paths
+Disallow: /admin/
+Disallow: /draft/
+Disallow: /_/
+
+# Sitemap location
+Sitemap: https://findyourhouse.es/sitemap.xml
+
+# Crawl-delay for bots (be kind to the server)
+Crawl-delay: 1

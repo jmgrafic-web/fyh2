@@ -1,0 +1,122 @@
+[
+  {
+    "id": "buy-property-costa-brava",
+    "title": "How to Buy Property on the Costa Brava: The Complete Guide",
+    "excerpt": "Everything international buyers need to know — legal process, costs, NIE, taxes, and how to avoid the most common mistakes.",
+    "category": "Buying Guides",
+    "date": "March 2024",
+    "readTime": "18 min read",
+    "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/buy-property-costa-brava.html"
+  },
+  {
+    "id": "cost-renovating-spain",
+    "title": "The Real Cost of Renovating a House in Spain in 2024",
+    "excerpt": "Detailed breakdown of renovation costs per square metre in Catalonia — from a light refresh to a full structural project. No surprises.",
+    "category": "Renovation",
+    "date": "February 2024",
+    "readTime": "14 min read",
+    "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/cost-of-renovating-a-house-in-spain.html"
+  },
+  {
+    "id": "architect-inspection",
+    "title": "Why You Need an Architect Before Buying Property in Spain",
+    "excerpt": "The structural problems, planning violations, and hidden costs that a standard survey misses — and that can turn a dream into a nightmare.",
+    "category": "Architecture",
+    "date": "January 2024",
+    "readTime": "10 min read",
+    "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/architect-inspection-before-buying.html"
+  },
+  {
+    "id": "taxes-buying-spain",
+    "title": "Property Purchase Taxes in Spain: What International Buyers Must Know",
+    "excerpt": "ITP, VAT, stamp duty, notary fees, land registry — a complete breakdown of every cost involved in buying a property in Catalonia.",
+    "category": "Taxes",
+    "date": "January 2024",
+    "readTime": "12 min read",
+    "image": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/taxes-buying-property-spain.html"
+  },
+  {
+    "id": "buying-from-netherlands",
+    "title": "Buying a Second Home in Spain from the Netherlands: Step by Step",
+    "excerpt": "A guide written specifically for Dutch buyers — NIE, mortgage options, tax treaties, and the Dutch community on the Costa Brava.",
+    "category": "Buying Guides",
+    "date": "December 2023",
+    "readTime": "11 min read",
+    "image": "https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/buying-property-in-spain-from-netherlands.html"
+  },
+  {
+    "id": "begur-guide",
+    "title": "Begur, Costa Brava: The Village That Has Everything",
+    "excerpt": "Why Begur has become the most sought-after address on the Costa Brava — the beaches, the architecture, the market, and where to look.",
+    "category": "Costa Brava",
+    "date": "November 2023",
+    "readTime": "9 min read",
+    "image": "https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/buy-property-begur.html"
+  },
+  {
+    "id": "sitges-guide",
+    "title": "Buying Property in Sitges: What You Need to Know",
+    "excerpt": "Sitges is the Costa Dorada's most cosmopolitan address. A guide to the neighbourhoods, the prices, and what to look for.",
+    "category": "Costa Dorada",
+    "date": "October 2023",
+    "readTime": "10 min read",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/buy-property-sitges.html"
+  },
+  {
+    "id": "second-home-spain",
+    "title": "How to Buy a Second Home in Spain: The Foreigner's Guide",
+    "excerpt": "The full picture — from initial search to keys in hand. Everything that's different when you buy in Spain versus your home country.",
+    "category": "Buying Guides",
+    "date": "September 2023",
+    "readTime": "20 min read",
+    "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/buy-second-home-spain.html"
+  },
+  {
+    "id": "maresme-guide",
+    "title": "Costa Maresme: The Smart Choice Near Barcelona",
+    "excerpt": "30 minutes from Barcelona, genuine Mediterranean life, accessible prices and excellent schools. Why more international buyers are choosing the Maresme.",
+    "category": "Costa Barcelona",
+    "date": "August 2023",
+    "readTime": "8 min read",
+    "image": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/buy-property-maresme.html"
+  },
+  {
+    "id": "investment-catalan-coast",
+    "title": "Is Buying Property on the Catalan Coast a Good Investment?",
+    "excerpt": "An honest look at the numbers — price growth, rental yields, market trends, and what kind of buyer gets the best return.",
+    "category": "Investment",
+    "date": "July 2023",
+    "readTime": "13 min read",
+    "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/investment-catalan-coast.html"
+  },
+  {
+    "id": "cadaques-guide",
+    "title": "Cadaqués: The Most Beautiful Village in Europe",
+    "excerpt": "Dalí's favourite village, unique planning restrictions, and a white-washed character unlike anywhere else. What buying here really means.",
+    "category": "Costa Brava",
+    "date": "June 2023",
+    "readTime": "8 min read",
+    "image": "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/buy-property-cadaques.html"
+  },
+  {
+    "id": "buying-from-france",
+    "title": "Buying a Home in Spain from France: The Key Differences",
+    "excerpt": "French buyers face specific tax treaty rules, inheritance considerations, and administrative steps. Here's what you need to know.",
+    "category": "Buying Guides",
+    "date": "May 2023",
+    "readTime": "11 min read",
+    "image": "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=75&auto=format&fit=crop",
+    "url": "en/guides/buying-property-in-spain-from-france.html"
+  }
+]

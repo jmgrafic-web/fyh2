@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Buy Property on the Costa Brava | FYH – Find Your House</title>
+  <meta name="description" content="The Costa Brava is Europe's most architecturally extraordinary coastline. Our local architects help international buyers find, assess and transform exceptional homes across Begur, Cadaqués, Tamariu and beyond.">
+  <meta name="keywords" content="buy property Costa Brava, Costa Brava real estate, second home Costa Brava, property Costa Brava foreigners, Begur property, Cadaques house, Tamariu villa">
+
+  <link rel="canonical" href="https://findyourhouse.es/en/regions/costa-brava/">
+  <link rel="alternate" hreflang="en" href="https://findyourhouse.es/en/regions/costa-brava/">
+  <link rel="alternate" hreflang="nl" href="https://findyourhouse.es/nl/regio/costa-brava/">
+  <link rel="alternate" hreflang="fr" href="https://findyourhouse.es/fr/regions/costa-brava/">
+  <link rel="alternate" hreflang="es" href="https://findyourhouse.es/es/regiones/costa-brava/">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://findyourhouse.es/en/regions/costa-brava/">
+  <meta property="og:title"       content="Buy Property on the Costa Brava | FYH">
+  <meta property="og:description" content="Europe's most extraordinary coastline. Our architects help international buyers find exceptional homes from Cadaqués to Begur.">
+  <meta property="og:image"       content="https://findyourhouse.es/images/og-costa-brava.jpg">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    "name": "Costa Brava",
+    "description": "The Costa Brava is a stretch of coastline in northeastern Catalonia, Spain, known for its rugged cliffs, crystal-clear water and dramatic coves.",
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.9, "longitude": 3.1 },
+    "containsPlace": [
+      {"@type": "City", "name": "Begur"},
+      {"@type": "City", "name": "Cadaqués"},
+      {"@type": "City", "name": "Tamariu"},
+      {"@type": "City", "name": "Llafranc"},
+      {"@type": "City", "name": "Pals"},
+      {"@type": "City", "name": "Platja d'Aro"}
+    ]
+  }
+  </script>
+
+  <!-- Breadcrumb -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://findyourhouse.es/en/"},
+      {"@type":"ListItem","position":2,"name":"Regions","item":"https://findyourhouse.es/en/regions/"},
+      {"@type":"ListItem","position":3,"name":"Costa Brava","item":"https://findyourhouse.es/en/regions/costa-brava/"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/main.css">
+
+  <style>
+    /* Page-specific overrides */
+    .region-hero { height: 80vh; min-height: 500px; }
+    .towns-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-12);
+    }
+    .town-card {
+      position: relative;
+      aspect-ratio: 4/3;
+      overflow: hidden;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .town-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 1.2s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .town-card:hover img { transform: scale(1.06); }
+    .town-card__overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(20,18,16,0.75) 0%, transparent 55%);
+    }
+    .town-card__content {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: var(--space-6);
+    }
+    .town-card__content h3 {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      color: var(--color-white);
+      font-weight: 300;
+      margin-bottom: var(--space-1);
+    }
+    .town-card__content p {
+      font-size: var(--text-xs);
+      color: rgba(247,245,242,0.65);
+      letter-spacing: 0.06em;
+    }
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1px;
+      background: var(--color-sand);
+      border: 1px solid var(--color-sand);
+      margin-top: var(--space-12);
+    }
+    .fact-item {
+      background: var(--color-white);
+      padding: var(--space-8) var(--space-6);
+      text-align: center;
+    }
+    .fact-item__number {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 300;
+      color: var(--color-med);
+      line-height: 1;
+      margin-bottom: var(--space-2);
+    }
+    .fact-item__label {
+      font-size: var(--text-xs);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-stone);
+    }
+    .lifestyle-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-4);
+      margin-top: var(--space-8);
+    }
+    .lifestyle-item {
+      display: flex;
+      gap: var(--space-4);
+      align-items: flex-start;
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--color-sand);
+    }
+    .lifestyle-item:last-child { border-bottom: none; }
+    .lifestyle-item__icon {
+      width: 40px; height: 40px;
+      background: var(--color-sand);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--color-med);
+    }
+    .lifestyle-item__icon svg { width: 18px; height: 18px; }
+    .lifestyle-item h4 { font-size: var(--text-md); margin-bottom: var(--space-1); }
+    .lifestyle-item p { font-size: var(--text-sm); color: var(--color-stone-dark); }
+
+    /* Breadcrumb */
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-xs);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-stone);
+      padding: var(--space-4) 0;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a { transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--color-ink); }
+    .breadcrumb span { color: var(--color-sand-dark); }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/en/" class="nav__logo">FYH</a>
+    <ul class="nav__links">
+      <li><a href="/en/regions/" class="nav__link">Regions</a></li>
+      <li><a href="/en/services/" class="nav__link">Services</a></li>
+      <li><a href="/en/guides/" class="nav__link">Journal</a></li>
+      <li><a href="/en/#why-fyh" class="nav__link">Why FYH</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:1.5rem">
+      <div class="nav__lang">
+        <a href="/en/" class="active">EN</a><a href="/nl/">NL</a><a href="/fr/">FR</a><a href="/es/">ES</a>
+      </div>
+      <a href="/en/#contact" class="nav__cta">Start your search</a>
+      <button class="nav__hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <button class="nav__mobile-close">✕</button>
+    <a href="/en/regions/">Regions</a><a href="/en/services/">Services</a>
+    <a href="/en/guides/">Journal</a><a href="/en/#contact">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero region-hero">
+      <div class="hero__media">
+        <img
+          src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf4?w=1800&q=85"
+          alt="Costa Brava rocky coastline with crystal clear water"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <div class="hero__eyebrow">
+          <span class="eyebrow">Northern Catalonia · Spain</span>
+        </div>
+        <h1 class="hero__title">Costa Brava</h1>
+        <p class="hero__subtitle">Europe's most extraordinary coastline. Dramatic coves, medieval villages and an architectural heritage unlike anywhere else in the Mediterranean.</p>
+        <div class="hero__actions">
+          <a href="/en/#contact" class="btn btn-primary">Find my Costa Brava home</a>
+          <a href="#towns" class="btn btn-outline">Explore towns</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BREADCRUMB -->
+    <div style="background:var(--color-sand)">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/en/">Home</a>
+          <span>→</span>
+          <a href="/en/regions/">Regions</a>
+          <span>→</span>
+          <span style="color:var(--color-ink)">Costa Brava</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- INTRO -->
+    <section class="section-pad">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:center">
+          <div>
+            <p class="eyebrow reveal">The region</p>
+            <h2 class="display-md reveal reveal-delay-1" style="margin-top:1rem;margin-bottom:1.5rem">
+              Where the Pyrenees<br>meet the sea.
+            </h2>
+            <p class="reveal reveal-delay-2" style="color:var(--color-stone-dark);line-height:1.75;margin-bottom:1.5rem">
+              The Costa Brava stretches 214km along the northeastern corner of Catalonia, from Blanes in the south to the French border. It is, by any measure, the most architecturally and naturally spectacular coast in Spain.
+            </p>
+            <p class="reveal reveal-delay-3" style="color:var(--color-stone-dark);line-height:1.75;margin-bottom:2rem">
+              Rugged limestone cliffs drop to hidden coves of crystalline water. Behind them, dense cork forests give way to medieval hilltop villages. The light here — particularly in spring and autumn — is painterly.
+            </p>
+            <p class="reveal reveal-delay-4" style="color:var(--color-stone-dark);line-height:1.75">
+              International buyers discover that the Costa Brava offers something genuinely rare: authentic architecture, a low-key local culture that hasn't been erased by tourism, and access to some of the most remarkable natural landscape in Europe.
+            </p>
+          </div>
+          <div style="position:relative">
+            <img
+              src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&q=80"
+              alt="Costa Brava village architecture"
+              loading="lazy"
+              style="width:100%;border-radius:2px;aspect-ratio:3/4;object-fit:cover"
+            >
+          </div>
+        </div>
+
+        <div class="facts-grid">
+          <div class="fact-item">
+            <div class="fact-item__number">214km</div>
+            <div class="fact-item__label">Coastline</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-item__number">70+</div>
+            <div class="fact-item__label">Coves and beaches</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-item__number">1h</div>
+            <div class="fact-item__label">From Barcelona</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-item__number">2h</div>
+            <div class="fact-item__label">From Barcelona El Prat</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-item__number">1h20</div>
+            <div class="fact-item__label">From Girona Airport</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOWNS -->
+    <section class="section-pad" style="background:var(--color-sand)" id="towns">
+      <div class="container">
+        <p class="eyebrow reveal text-center">Where to buy</p>
+        <h2 class="display-md reveal reveal-delay-1 text-center" style="margin-top:1rem">
+          The towns we know best
+        </h2>
+        <p class="lead reveal reveal-delay-2 text-center" style="margin-inline:auto;margin-top:1rem">
+          Each town on the Costa Brava has its own distinct character. We help you find the one that's right for your life.
+        </p>
+
+        <div class="towns-grid">
+          <a href="/en/regions/costa-brava/begur/" class="town-card">
+            <img src="https://images.unsplash.com/photo-1590725140246-20acddc1ec6d?w=700&q=80" alt="Begur village" loading="lazy">
+            <div class="town-card__overlay"></div>
+            <div class="town-card__content">
+              <h3>Begur</h3>
+              <p>Architecture · Calas · Village life</p>
+            </div>
+          </a>
+          <a href="/en/regions/costa-brava/tamariu/" class="town-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=700&q=80" alt="Tamariu cove" loading="lazy">
+            <div class="town-card__overlay"></div>
+            <div class="town-card__content">
+              <h3>Tamariu</h3>
+              <p>Quiet · Exclusive · Unspoilt</p>
+            </div>
+          </a>
+          <a href="/en/regions/costa-brava/llafranc/" class="town-card">
+            <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?w=700&q=80" alt="Llafranc bay" loading="lazy">
+            <div class="town-card__overlay"></div>
+            <div class="town-card__content">
+              <h3>Llafranc</h3>
+              <p>Bay views · Walking · Community</p>
+            </div>
+          </a>
+          <a href="/en/regions/costa-brava/cadaques/" class="town-card">
+            <img src="https://images.unsplash.com/photo-1536437075651-01d675529a8a?w=700&q=80" alt="Cadaqués white village" loading="lazy">
+            <div class="town-card__overlay"></div>
+            <div class="town-card__content">
+              <h3>Cadaqués</h3>
+              <p>Dalí · White walls · Wild Cap de Creus</p>
+            </div>
+          </a>
+          <a href="/en/regions/costa-brava/pals/" class="town-card">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="Pals medieval village" loading="lazy">
+            <div class="town-card__overlay"></div>
+            <div class="town-card__content">
+              <h3>Pals</h3>
+              <p>Medieval · Inland beauty · Golf</p>
+            </div>
+          </a>
+          <a href="/en/regions/costa-brava/platja-d-aro/" class="town-card">
+            <img src="https://images.unsplash.com/photo-1594818898109-37a05bc88f20?w=700&q=80" alt="Platja d'Aro beach" loading="lazy">
+            <div class="town-card__overlay"></div>
+            <div class="town-card__content">
+              <h3>Platja d'Aro</h3>
+              <p>Beach · Family · Connectivity</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIFESTYLE -->
+    <section class="section-pad">
+      <div class="container">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem)">
+          <div>
+            <p class="eyebrow reveal">Life here</p>
+            <h2 class="display-md reveal reveal-delay-1" style="margin-top:1rem;margin-bottom:2rem">
+              More than a<br>summer destination
+            </h2>
+            <p class="reveal reveal-delay-2" style="color:var(--color-stone-dark);line-height:1.75;margin-bottom:2rem">
+              The Costa Brava has outgrown its image as a package-holiday coast. Today, it is a year-round destination for those who value authenticity, nature, quality food and a pace of life that is no longer available in most of Europe.
+            </p>
+            <div class="lifestyle-list">
+              <div class="lifestyle-item reveal">
+                <div class="lifestyle-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                </div>
+                <div>
+                  <h4>Architecture & design</h4>
+                  <p>A region with deep respect for craft. From restored masies to contemporary concrete villas, the quality of building here is exceptional.</p>
+                </div>
+              </div>
+              <div class="lifestyle-item reveal reveal-delay-1">
+                <div class="lifestyle-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm-1-17v6l4 2"/></svg>
+                </div>
+                <div>
+                  <h4>Year-round lifestyle</h4>
+                  <p>Mild winters, warm springs and long autumns mean your second home works for you 9–10 months of the year — not just July and August.</p>
+                </div>
+              </div>
+              <div class="lifestyle-item reveal reveal-delay-2">
+                <div class="lifestyle-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                </div>
+                <div>
+                  <h4>Exceptional food & wine</h4>
+                  <p>Home to El Celler de Can Roca, multiple Michelin stars and a market-cooking tradition that makes every meal remarkable.</p>
+                </div>
+              </div>
+              <div class="lifestyle-item reveal reveal-delay-3">
+                <div class="lifestyle-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </div>
+                <div>
+                  <h4>International connections</h4>
+                  <p>Girona Airport (40 min) connects directly to Amsterdam, Brussels, London, Paris and over 30 European cities year-round.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=80"
+              alt="Costa Brava lifestyle architecture"
+              loading="lazy"
+              style="width:100%;border-radius:2px;aspect-ratio:4/5;object-fit:cover"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROPERTY MARKET -->
+    <section class="section-pad" style="background:var(--color-sand)">
+      <div class="container container--narrow">
+        <p class="eyebrow reveal text-center">The market</p>
+        <h2 class="display-md reveal reveal-delay-1 text-center" style="margin-top:1rem;margin-bottom:3rem">
+          What to expect<br>when buying here
+        </h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
+          <div class="reveal" style="background:var(--color-white);padding:2rem;border-radius:2px">
+            <h3 style="font-family:var(--font-display);font-size:var(--text-xl);margin-bottom:1rem">Price ranges</h3>
+            <p style="color:var(--color-stone-dark);font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">Entry-level properties in well-located towns start from €350,000 for apartments needing renovation. Character houses with potential range from €500,000 to €1.2M. Exceptional properties with sea views, established gardens and high-quality finishes: €1.5M–€5M+.</p>
+            <p style="color:var(--color-stone-dark);font-size:var(--text-sm);line-height:1.7">The Costa Brava has consistently outperformed other Spanish coastal markets over the past decade, driven by limited buildable land and sustained international demand.</p>
+          </div>
+          <div class="reveal reveal-delay-1" style="background:var(--color-white);padding:2rem;border-radius:2px">
+            <h3 style="font-family:var(--font-display);font-size:var(--text-xl);margin-bottom:1rem">Renovation potential</h3>
+            <p style="color:var(--color-stone-dark);font-size:var(--text-sm);line-height:1.7;margin-bottom:1rem">The greatest value opportunity on the Costa Brava lies in properties that need architectural transformation. Many buyers purchase for €600,000–€900,000 and invest a further €150,000–€300,000 in renovation to create homes worth €1.2M–€2M.</p>
+            <p style="color:var(--color-stone-dark);font-size:var(--text-sm);line-height:1.7">Our architectural team identifies this potential — the structural bones, the views, the planning flexibility — before you commit to anything.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section-pad" style="background:var(--color-med);color:var(--color-white);text-align:center">
+      <div class="container container--narrow">
+        <p class="eyebrow" style="color:rgba(247,245,242,0.5);margin-bottom:1rem">Ready to begin?</p>
+        <h2 class="display-md" style="color:var(--color-white);margin-bottom:1.5rem">
+          Find your home<br>on the Costa Brava.
+        </h2>
+        <p style="color:rgba(247,245,242,0.75);max-width:520px;margin-inline:auto;line-height:1.7;margin-bottom:2.5rem">
+          Tell us what you're looking for. We'll arrange an initial consultation — no commitment, no pressure — and show you what's possible.
+        </p>
+        <a href="/en/#contact" class="btn btn-primary">Start the conversation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <div class="footer__brand-name">FYH</div>
+          <p class="footer__brand-desc">Architects helping international buyers find and transform exceptional homes on the Catalan Coast.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Costa Brava</h4>
+          <ul class="footer__links">
+            <li><a href="/en/regions/costa-brava/begur/">Begur</a></li>
+            <li><a href="/en/regions/costa-brava/tamariu/">Tamariu</a></li>
+            <li><a href="/en/regions/costa-brava/llafranc/">Llafranc</a></li>
+            <li><a href="/en/regions/costa-brava/cadaques/">Cadaqués</a></li>
+            <li><a href="/en/regions/costa-brava/pals/">Pals</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul class="footer__links">
+            <li><a href="/en/services/property-search/">Property Search</a></li>
+            <li><a href="/en/services/architectural-assessment/">Assessment</a></li>
+            <li><a href="/en/services/renovation/">Renovation</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Guides</h4>
+          <ul class="footer__links">
+            <li><a href="/en/guides/buy-property-begur.html">Buying in Begur</a></li>
+            <li><a href="/en/guides/how-to-buy-property-in-spain-as-a-foreigner.html">Foreign Buyers</a></li>
+            <li><a href="/en/guides/cost-of-renovating-a-house-in-spain.html">Renovation Costs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 FYH – Find Your House. All rights reserved.</p>
+        <nav class="footer__legal"><a href="/en/privacy/">Privacy</a><a href="/en/legal/">Legal</a></nav>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/34972000000" class="whatsapp-fab" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.9/lenis.min.js" defer></script>
+  <script src="../../../js/main.js" defer></script>
+</body>
+</html>
