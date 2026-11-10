@@ -1,0 +1,58 @@
+title: Find Your Haven
+description: "Mediterranean Coast · Catalonia · 360° Property Partner"
+url: "https://jmgrafic-web.github.io"     # cámbialo si más adelante conectas tu propio dominio
+baseurl: "/fyhcatalonia"                  # nombre de tu repo. Ponlo a "" si algún día usas un dominio propio o un repo user.github.io
+
+# ---------------------------------------------------------------------------
+# Plugins permitidos de forma nativa por GitHub Pages (no requieren GitHub
+# Actions ni gemas fuera de la lista blanca). Si más adelante despliegas con
+# un workflow de GitHub Actions puedes añadir cualquier otro plugin.
+# ---------------------------------------------------------------------------
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# ---------------------------------------------------------------------------
+# Colección de artículos. Cada artículo es UN archivo .md dentro de
+# _articles/ con su propio front matter (incluye su propio "permalink"),
+# así que añadir un artículo nuevo NUNCA obliga a tocar ni regenerar el
+# resto del sitio a mano — GitHub Pages reconstruye solo con el push.
+# ---------------------------------------------------------------------------
+collections:
+  articles:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article
+
+# Idiomas soportados y su etiqueta de navegador (para hreflang / og:locale)
+languages:
+  - code: en
+    locale: en_GB
+    label: "English"
+  - code: es
+    locale: es_ES
+    label: "Español"
+  - code: nl
+    locale: nl_NL
+    label: "Nederlands"
+  - code: fr
+    locale: fr_FR
+    label: "Français"
+
+default_lang: en
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - ARTICLES-GUIA.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

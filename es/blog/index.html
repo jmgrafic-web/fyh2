@@ -1,0 +1,31 @@
+---
+layout: default
+nav_theme: light
+lang: es
+title: "La Revista FYH — Guías sobre comprar y reformar en la Costa Catalana"
+seo_title: "Revista FYH: guías para comprar y reformar en Cataluña"
+description: "Artículos prácticos sobre comprar, reformar y vivir en la Costa Brava, el Maresme, Sitges, el Empordà y la Costa Daurada."
+permalink: /es/blog/
+translations:
+  es: /es/blog/
+  en: /en/blog/
+  nl: /nl/blog/
+  fr: /fr/blog/
+h1: "Notas sobre comprar, reformar y vivir en la costa catalana"
+lede: "Guías prácticas, sin relleno, escritas por el equipo que acompaña estos procesos cada día."
+---
+{% capture lb %}
+    <div class="leadbox">
+      <div class="leadbox-copy">
+        <h3>Guía gratuita: comprar en la Costa Brava — Edición 2026</h3>
+        <p>El proceso paso a paso, los 5 errores más caros y una primera foto de las zonas donde trabajamos. En PDF, al instante.</p>
+      </div>
+      <form action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST">
+        <input type="hidden" name="_next" value="{{ '/es/gracias-guia/' | absolute_url }}">
+        <input type="hidden" name="_subject" value="Descarga: Guía Costa Brava 2026">
+        <input type="email" name="Email" placeholder="Tu email" required>
+        <button type="submit">Descargar guía →</button>
+      </form>
+    </div>
+{% endcapture %}
+{% include blog-index.html content=lb %}

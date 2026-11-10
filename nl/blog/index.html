@@ -1,0 +1,31 @@
+---
+layout: default
+nav_theme: light
+lang: nl
+title: "Het FYH Journal — Gidsen over kopen en renoveren aan de Catalaanse kust"
+seo_title: "FYH Journal: gidsen over kopen en renoveren in Catalonië"
+description: "Praktische artikelen over kopen, renoveren en wonen aan de Costa Brava, de Maresme, Sitges, de Empordà en de Costa Daurada."
+permalink: /nl/blog/
+translations:
+  es: /es/blog/
+  en: /en/blog/
+  nl: /nl/blog/
+  fr: /fr/blog/
+h1: "Verhalen over kopen, renoveren en leven aan de Catalaanse kust"
+lede: "Praktische gidsen zonder opsmuk, geschreven door het team dat deze processen dagelijks begeleidt."
+---
+{% capture lb %}
+    <div class="leadbox">
+      <div class="leadbox-copy">
+        <h3>Gratis gids: kopen aan de Costa Brava — Editie 2026</h3>
+        <p>Het proces stap voor stap, de 5 duurste fouten en een eerste blik op de gebieden waar wij werken. Als pdf, meteen.</p>
+      </div>
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <input type="hidden" name="_next" value="{{ '/nl/bedankt-gids/' | absolute_url }}">
+        <input type="hidden" name="_subject" value="Download: Costa Brava Gids 2026">
+        <input type="email" name="Email" placeholder="Jouw email" required>
+        <button type="submit">Download de gids →</button>
+      </form>
+    </div>
+{% endcapture %}
+{% include blog-index.html content=lb %}

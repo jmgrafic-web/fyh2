@@ -1,0 +1,40 @@
+---
+layout: default
+lang: en
+nav_theme: light
+title: "404 — Find Your Haven"
+description: "Page not found."
+permalink: /404.html
+sitemap: false
+noindex: true
+---
+<section class="section" style="padding-top: clamp(120px, 16vw, 180px); min-height: 80vh;">
+  <div class="wrap">
+    <p class="eyebrow">404</p>
+    <h1>Page <em>not found</em></h1>
+    <p class="lede" style="margin-top:.6em;">Esta página no existe · Deze pagina bestaat niet · Cette page n'existe pas</p>
+
+    <div class="mt-lg" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: var(--sand); border:1px solid var(--sand); max-width: 920px;">
+      <a href="{{ '/en/' | relative_url }}" lang="en" style="background:var(--white); padding:1.6em 1.5em; display:block;">
+        <span class="eyebrow" style="margin-bottom:.4em;">English</span>
+        <span style="display:block; font-family:var(--font-display); font-size:1.5rem; font-weight:300; line-height:1.2; margin-bottom:.7em;">Back to the homepage</span>
+        <span class="btn btn-ghost" style="pointer-events:none;">Go →</span>
+      </a>
+      <a href="{{ '/es/' | relative_url }}" lang="es" style="background:var(--white); padding:1.6em 1.5em; display:block;">
+        <span class="eyebrow" style="margin-bottom:.4em;">Español</span>
+        <span style="display:block; font-family:var(--font-display); font-size:1.5rem; font-weight:300; line-height:1.2; margin-bottom:.7em;">Volver al inicio</span>
+        <span class="btn btn-ghost" style="pointer-events:none;">Ir →</span>
+      </a>
+      <a href="{{ '/nl/' | relative_url }}" lang="nl" style="background:var(--white); padding:1.6em 1.5em; display:block;">
+        <span class="eyebrow" style="margin-bottom:.4em;">Nederlands</span>
+        <span style="display:block; font-family:var(--font-display); font-size:1.5rem; font-weight:300; line-height:1.2; margin-bottom:.7em;">Terug naar de homepage</span>
+        <span class="btn btn-ghost" style="pointer-events:none;">Ga →</span>
+      </a>
+      <a href="{{ '/fr/' | relative_url }}" lang="fr" style="background:var(--white); padding:1.6em 1.5em; display:block;">
+        <span class="eyebrow" style="margin-bottom:.4em;">Français</span>
+        <span style="display:block; font-family:var(--font-display); font-size:1.5rem; font-weight:300; line-height:1.2; margin-bottom:.7em;">Retour à l'accueil</span>
+        <span class="btn btn-ghost" style="pointer-events:none;">Aller →</span>
+      </a>
+    </div>
+  </div>
+</section>

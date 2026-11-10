@@ -1,0 +1,31 @@
+---
+layout: default
+nav_theme: light
+lang: en
+title: "The FYH Journal — Guides on buying and renovating on the Catalan Coast"
+seo_title: "FYH Journal: Guides to Buying and Renovating in Catalonia"
+description: "Practical articles on buying, renovating and living on the Costa Brava, the Maresme, Sitges, the Empordà and the Costa Daurada."
+permalink: /en/blog/
+translations:
+  es: /es/blog/
+  en: /en/blog/
+  nl: /nl/blog/
+  fr: /fr/blog/
+h1: "Notes on buying, renovating and living on the Catalan coast"
+lede: "Practical, no-filler guides written by the team who runs these projects every day."
+---
+{% capture lb %}
+    <div class="leadbox">
+      <div class="leadbox-copy">
+        <h3>Free guide: buying on the Costa Brava — 2026 Edition</h3>
+        <p>The process step by step, the 5 costliest mistakes and a first look at the areas where we work. As a PDF, instantly.</p>
+      </div>
+      <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+        <input type="hidden" name="_next" value="{{ '/en/thank-you-guide/' | absolute_url }}">
+        <input type="hidden" name="_subject" value="Download: Costa Brava Guide 2026">
+        <input type="email" name="Email" placeholder="Your email" required>
+        <button type="submit">Download guide →</button>
+      </form>
+    </div>
+{% endcapture %}
+{% include blog-index.html content=lb %}
