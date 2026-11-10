@@ -1,0 +1,152 @@
+order: [comprar, zonas, reformar, dinero, vivir]
+seg:
+  es: tema
+  en: topic
+  nl: onderwerp
+  fr: theme
+cats:
+  comprar:
+    es:
+      slug: "comprar"
+      name: "Comprar"
+      h1: "Comprar casa en la Costa Catalana"
+      seo: "Comprar casa en la Costa Catalana: guías paso a paso"
+      desc: "Guías prácticas para comprar casa en la Costa Catalana siendo extranjero: proceso, notaría, cédula de habitabilidad, due diligence y errores legales."
+      intro: "Del primer contacto a la firma ante notario: el recorrido real de una compra en Cataluña, explicado sin relleno. Aquí están los pasos, los documentos y los errores que más dinero cuestan."
+    en:
+      slug: "buying"
+      name: "Buying"
+      h1: "Buying a home on the Catalan coast"
+      seo: "Buying a Home on the Catalan Coast: Step-by-Step Guides"
+      desc: "Practical guides to buying a home on the Catalan coast as a foreigner: the process, the notary, habitability certificate, due diligence and legal pitfalls."
+      intro: "From first contact to completion at the notary: the real journey of buying in Catalonia, explained without filler. Here are the steps, the documents and the mistakes that cost the most."
+    nl:
+      slug: "kopen"
+      name: "Kopen"
+      h1: "Een huis kopen aan de Catalaanse kust"
+      seo: "Een huis kopen aan de Catalaanse kust: stappengidsen"
+      desc: "Praktische gidsen voor het kopen van een huis aan de Catalaanse kust als buitenlander: proces, notaris, bewoonbaarheidscertificaat, due diligence en valkuilen."
+      intro: "Van het eerste contact tot de overdracht bij de notaris: het echte traject van een aankoop in Catalonië, zonder opvulling. Hier vind je de stappen, de documenten en de fouten die het meeste geld kosten."
+    fr:
+      slug: "acheter"
+      name: "Acheter"
+      h1: "Acheter un bien sur la côte catalane"
+      seo: "Acheter sur la côte catalane : guides étape par étape"
+      desc: "Guides pratiques pour acheter sur la côte catalane en tant qu'étranger : processus, notaire, certificat d'habitabilité, due diligence et pièges juridiques."
+      intro: "Du premier contact à la signature chez le notaire : le vrai parcours d'un achat en Catalogne, expliqué sans remplissage. Voici les étapes, les documents et les erreurs qui coûtent le plus cher."
+  zonas:
+    es:
+      slug: "zonas"
+      name: "Zonas"
+      h1: "Zonas de la Costa Catalana"
+      seo: "Zonas de la Costa Catalana: dónde comprar casa"
+      desc: "Comparativas y guías de zona para comprar en la Costa Catalana: Costa Brava, Begur, Cadaqués, Empordà, Maresme, Sitges y Costa Daurada."
+      intro: "Cada pueblo de la costa catalana tiene su carácter, su mercado y su manera de vivirse fuera del verano. Estas guías ayudan a comparar zonas con criterio antes de visitar."
+    en:
+      slug: "areas"
+      name: "Areas"
+      h1: "Areas of the Catalan coast"
+      seo: "Where to Buy on the Catalan Coast: Area Guides"
+      desc: "Area guides and comparisons for buying on the Catalan coast: Costa Brava, Begur, Cadaqués, the Empordà, the Maresme, Sitges and the Costa Daurada."
+      intro: "Every town on the Catalan coast has its own character, its own market and its own way of being lived in outside summer. These guides help you compare areas properly before you visit."
+    nl:
+      slug: "gebieden"
+      name: "Gebieden"
+      h1: "Gebieden aan de Catalaanse kust"
+      seo: "Waar kopen aan de Catalaanse kust: gebiedsgidsen"
+      desc: "Gebiedsgidsen en vergelijkingen voor wie aan de Catalaanse kust wil kopen: Costa Brava, Begur, Cadaqués, de Empordà, de Maresme, Sitges en de Costa Daurada."
+      intro: "Elk dorp aan de Catalaanse kust heeft een eigen karakter, een eigen markt en een eigen manier van leven buiten de zomer. Deze gidsen helpen je gebieden goed te vergelijken voordat je op bezoek gaat."
+    fr:
+      slug: "zones"
+      name: "Zones"
+      h1: "Les zones de la côte catalane"
+      seo: "Où acheter sur la côte catalane : guides par zone"
+      desc: "Guides et comparatifs par zone pour acheter sur la côte catalane : Costa Brava, Begur, Cadaqués, Empordà, Maresme, Sitges et Costa Daurada."
+      intro: "Chaque village de la côte catalane a son caractère, son marché et sa façon de se vivre hors de l'été. Ces guides aident à comparer les zones avec méthode avant de visiter."
+  reformar:
+    es:
+      slug: "reformar"
+      name: "Reformar"
+      h1: "Reformar una casa en Cataluña"
+      seo: "Reformar una casa en Cataluña: costes, licencias y obra"
+      desc: "Cuánto cuesta reformar una casa en Cataluña, qué licencia de obras necesitas y cómo elegir entre una masía para restaurar y una villa de obra nueva."
+      intro: "La reforma es donde más se gana o se pierde en una compra. Costes por niveles, licencias, plazos y la decisión de fondo entre restaurar algo antiguo o empezar con algo nuevo."
+    en:
+      slug: "renovating"
+      name: "Renovating"
+      h1: "Renovating a home in Catalonia"
+      seo: "Renovating a Home in Catalonia: Costs, Permits, Works"
+      desc: "How much it costs to renovate a home in Catalonia, which building permit you need and how to choose between a farmhouse to restore and a new-build villa."
+      intro: "The renovation is where a purchase is most often won or lost. Costs by level, permits, timelines and the underlying choice between restoring something old and starting with something new."
+    nl:
+      slug: "renoveren"
+      name: "Renoveren"
+      h1: "Een huis renoveren in Catalonië"
+      seo: "Een huis renoveren in Catalonië: kosten en vergunningen"
+      desc: "Wat een renovatie in Catalonië kost, welke bouwvergunning je nodig hebt en hoe je kiest tussen een boerderij om te restaureren en een nieuwbouwvilla."
+      intro: "De renovatie is waar een aankoop het vaakst gewonnen of verloren wordt. Kosten per niveau, vergunningen, tijdlijnen en de onderliggende keuze tussen iets ouds restaureren en met iets nieuws beginnen."
+    fr:
+      slug: "renover"
+      name: "Rénover"
+      h1: "Rénover un bien en Catalogne"
+      seo: "Rénover un bien en Catalogne : coûts, permis, travaux"
+      desc: "Combien coûte une rénovation en Catalogne, quel permis de construire il faut et comment choisir entre une masia à restaurer et une villa neuve."
+      intro: "La rénovation est là où un achat se gagne ou se perd le plus souvent. Coûts par niveau, permis, délais et le choix de fond entre restaurer de l'ancien et partir sur du neuf."
+  dinero:
+    es:
+      slug: "dinero-y-tramites"
+      name: "Dinero y trámites"
+      h1: "Dinero y trámites para comprar en España"
+      seo: "Dinero y trámites al comprar casa en España"
+      desc: "Impuestos, hipoteca, cuenta bancaria, NIE y Golden Visa: el dinero y el papeleo de comprar casa en España siendo extranjero o no residente."
+      intro: "Impuestos, financiación, cuenta bancaria, NIE y residencia: la parte administrativa de comprar desde fuera, ordenada y sin sorpresas."
+    en:
+      slug: "money-and-paperwork"
+      name: "Money & paperwork"
+      h1: "Money and paperwork when buying in Spain"
+      seo: "Money and Paperwork When Buying a Home in Spain"
+      desc: "Taxes, mortgage, bank account, NIE and Golden Visa: the money and paperwork of buying a home in Spain as a foreign or non-resident buyer."
+      intro: "Taxes, financing, bank account, NIE and residency: the administrative side of buying from abroad, laid out in order and without surprises."
+    nl:
+      slug: "geld-en-papierwerk"
+      name: "Geld & papierwerk"
+      h1: "Geld en papierwerk bij kopen in Spanje"
+      seo: "Geld en papierwerk bij een huis kopen in Spanje"
+      desc: "Belastingen, hypotheek, bankrekening, NIE en Golden Visa: het geld en papierwerk van een woning kopen in Spanje als buitenlander of niet-ingezetene."
+      intro: "Belastingen, financiering, bankrekening, NIE en verblijfsrecht: de administratieve kant van kopen vanuit het buitenland, op volgorde en zonder verrassingen."
+    fr:
+      slug: "argent-et-demarches"
+      name: "Argent et démarches"
+      h1: "Argent et démarches pour acheter en Espagne"
+      seo: "Argent et démarches pour acheter un bien en Espagne"
+      desc: "Impôts, prêt immobilier, compte bancaire, NIE et Golden Visa : l'argent et la paperasse d'un achat en Espagne pour étranger ou non-résident."
+      intro: "Impôts, financement, compte bancaire, NIE et résidence : la partie administrative d'un achat depuis l'étranger, mise en ordre et sans surprises."
+  vivir:
+    es:
+      slug: "vivir-y-gestionar"
+      name: "Vivir y gestionar"
+      h1: "Vivir y gestionar tu casa en la costa"
+      seo: "Vivir y gestionar una casa en la Costa Catalana"
+      desc: "Vivir todo el año en la costa catalana, alquiler vacacional, rentabilidad y cuánto cuesta mantener una casa: la vida y la gestión después de comprar."
+      intro: "Comprar es solo el principio. Cómo es el día a día, cuánto cuesta mantener la casa y qué hay que saber si piensas alquilarla."
+    en:
+      slug: "living-and-owning"
+      name: "Living & owning"
+      h1: "Living in and managing your coastal home"
+      seo: "Living In and Managing a Home on the Catalan Coast"
+      desc: "Living year-round on the Catalan coast, holiday letting, profitability and what it costs to keep a home: life and management after you buy."
+      intro: "Buying is only the start. What daily life is like, what it costs to keep the house, and what to know if you plan to let it."
+    nl:
+      slug: "wonen-en-beheren"
+      name: "Wonen & beheren"
+      h1: "Wonen in en beheren van je kustwoning"
+      seo: "Wonen in en beheren van een woning aan de Catalaanse kust"
+      desc: "Het hele jaar wonen aan de Catalaanse kust, vakantieverhuur, rendement en wat het kost een woning te onderhouden: leven en beheer na de aankoop."
+      intro: "Kopen is pas het begin. Hoe het dagelijks leven eruitziet, wat het kost het huis te onderhouden en wat je moet weten als je van plan bent te verhuren."
+    fr:
+      slug: "vivre-et-gerer"
+      name: "Vivre et gérer"
+      h1: "Vivre dans votre maison de la côte et la gérer"
+      seo: "Vivre et gérer un bien sur la côte catalane"
+      desc: "Vivre toute l'année sur la côte catalane, location saisonnière, rentabilité et coût d'entretien d'une maison : la vie et la gestion après l'achat."
+      intro: "Acheter n'est que le début. Ce qu'est le quotidien, ce que coûte l'entretien de la maison et ce qu'il faut savoir si vous comptez la louer."

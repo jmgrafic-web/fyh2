@@ -1,0 +1,677 @@
+# Textos de la portada (4 idiomas). Plantilla: _includes/home.html
+es:
+  title: Find Your Haven — Tu partner inmobiliario en la Costa Catalana
+  description: 'Arquitectos y profesionales inmobiliarios que te acompañan a encontrar y transformar tu vivienda en la Costa Catalana: Costa Brava, Maresme y Costa Daurada.'
+  hero_alt: Terraza de piedra con piscina frente al mar Mediterráneo
+  hero_title:
+  - Encuentra tu
+  - refugio mediterráneo.
+  hero_sub:
+  - Arraigados en la arquitectura.
+  - Centrados en ti.
+  hero_text: Te acompañamos en cada paso para encontrar y transformar un lugar que sientas como propio.
+  hero_cta: Cuéntanos qué estás buscando
+  hero_cta_short: Hablemos
+  hero_cta2: Descubre cómo trabajamos
+  points:
+  - Un solo interlocutor
+  - Sin coste para ti
+  - Profesionales de confianza
+  a_about: quienes-somos
+  a_services: servicios
+  a_process: proceso
+  a_contact: contacto
+  a_partners: partners
+  a_journal: revista-home
+  model_eyebrow: Nuestro modelo
+  model_h2: Como arquitectos, te acompañamos.
+  model_h2_em: Siempre de tu lado.
+  model_p1: Comprar una vivienda en el Mediterráneo es mucho más que encontrar una casa bonita. Es elegir un lugar, entender su potencial y tomar decisiones con confianza. Por eso reunimos conocimiento arquitectónico, experiencia inmobiliaria y una red de colaboradores seleccionados para acompañarte desde la primera idea hasta el último detalle.
+  model_p2: <strong>Nuestro servicio de acompañamiento no tiene coste para ti.</strong> Trabajamos con partners seleccionados para ayudarte a avanzar con criterio, transparencia y tranquilidad.
+  model_alt: Salón de una casa mediterránea abierto al mar
+  model_flow_label: Tú, Find Your Haven y nuestros partners
+  flow:
+  - t: Tú
+    p: Entendemos tus necesidades, tus prioridades y la forma en la que quieres vivir.
+  - t: Find Your Haven
+    p: Te orientamos y coordinamos el proceso con una mirada arquitectónica e inmobiliaria.
+  - t: Nuestros partners
+    p: Colaboramos con profesionales seleccionados cuando cada proyecto lo necesita.
+  model_cta: Hablemos de lo que tienes en mente
+  svc_eyebrow: Nuestros servicios
+  svc_h2: De la primera búsqueda a las llaves.
+  svc_h2_em: Seis servicios. Un solo interlocutor.
+  svc_intro: Te ayudamos a tomar decisiones informadas en cada etapa, combinando visión arquitectónica, conocimiento del mercado y acompañamiento personal.
+  services:
+  - t: Búsqueda e informe preliminar
+    p: Analizamos tus necesidades y prioridades para definir un punto de partida claro, y buscamos opciones alineadas con tu estilo de vida y tus objetivos, mirando más allá de las fotografías.
+    url: /es/blog/comprar-vivienda-costa-brava-extranjero/
+    img: /assets/img/hero/hero-terraza-tablet.jpg
+  - t: Due diligence técnica
+    p: Revisamos los aspectos técnicos relevantes de la vivienda para ayudarte a comprender su estado, sus posibilidades y los puntos que conviene estudiar antes de decidir.
+    url: /es/blog/due-diligence-tecnica-inmobiliaria/
+    img: /assets/img/home/servicios.jpg
+  - t: Representación
+    p: Defendemos tus intereses durante el proceso, facilitamos la comunicación entre las partes y te ayudamos a avanzar con mayor claridad.
+    url: /es/blog/errores-legales-comprar-sin-abogado/
+    img: /assets/img/home/contacto.jpg
+  - t: Arquitectura, reforma y obra
+    p: Valoramos el potencial de cada espacio y te acompañamos en la definición de mejoras, reformas y soluciones adaptadas a tus necesidades.
+    url: /es/blog/cuanto-cuesta-reformar-casa-costa-catalana/
+    img: /assets/img/home/paso-02.jpg
+  - t: Interiorismo
+    p: Damos forma a interiores funcionales y serenos, con materiales naturales, proporciones cuidadas y una estética conectada con el Mediterráneo.
+    url: '#contacto'
+    img: /assets/img/home/paso-03.jpg
+  - t: Gestión
+    p: Coordinamos los profesionales y las distintas fases del proyecto para que el proceso sea más sencillo, ordenado y coherente.
+    url: /es/blog/cuanto-cuesta-mantener-casa-costa-brava-al-ano/
+    img: /assets/img/home/paso-04.jpg
+  svc_alt: Casa de piedra entre olivos con vistas al mar
+  svc_cta: Cuéntanos tu proyecto
+  proc_eyebrow: Cómo trabajamos
+  proc_h2: Un proceso claro.
+  proc_h2_em: Decisiones con confianza.
+  proc_intro: Cada búsqueda es diferente. Nuestro método te ayuda a avanzar paso a paso, con una visión global y acompañamiento profesional durante todo el recorrido.
+  steps:
+  - t: Te escuchamos
+    p: 'Empezamos por conocerte: qué buscas, cómo quieres vivir y qué es importante para ti.'
+  - t: Definimos el rumbo
+    p: Convertimos tus prioridades en criterios claros para orientar la búsqueda y valorar las opciones con sentido.
+  - t: Analizamos y decidimos
+    p: Estudiamos cada oportunidad desde una perspectiva arquitectónica e inmobiliaria para que puedas decidir con más información.
+  - t: Te acompañamos hasta el siguiente paso
+    p: Coordinamos a los profesionales necesarios y te ayudamos a avanzar hacia la compra, la reforma o la puesta a punto del espacio.
+  proc_cta: Empecemos por una conversación
+  mag_eyebrow: Revista
+  mag_h2: Ideas, lugares y miradas sobre el Mediterráneo.
+  mag_intro: Una selección de historias para descubrir la arquitectura local, los materiales, los interiores y las formas de vivir que hacen especial a esta costa. Inspiración y conocimiento para mirar cada espacio con otros ojos.
+  mag_all: Todos
+  mag_read: Leer artículo
+  mag_btn: Explora la revista
+  guide_eyebrow: Guía gratuita
+  guide_title: Comprar en la Costa Brava · Edición 2026
+  guide_text: Déjanos tu email y te la enviamos. De vez en cuando, también alguna novedad de la costa.
+  guide_next: /es/gracias-guia/
+  guide_subject: Nueva suscripción — Guía Costa Brava 2026
+  guide_placeholder: Tu email
+  guide_btn: Recibir la guía
+  guide_note: Al suscribirte aceptas nuestra
+  guide_note_link: política de privacidad
+  form_action: https://formspree.io/f/TU_ID_FORMSPREE
+  contact_eyebrow: Contacto
+  contact_h2: Tu próximo capítulo puede empezar aquí.
+  contact_text: Cuéntanos qué estás buscando o qué proyecto tienes en mente. Escucharemos tus ideas y te orientaremos sobre cómo podemos ayudarte.
+  contact_error: No hemos podido enviar el mensaje. Inténtalo de nuevo o escríbenos a hello@findyourhaven.com.
+  contact_subject: Nueva consulta desde la web (ES)
+  lang_code: ES
+  hp_label: No rellenar
+  f_name: Nombre
+  f_email: Correo electrónico
+  f_phone: Teléfono
+  f_optional: (opcional)
+  f_topic: ¿En qué podemos ayudarte?
+  f_msg: Mensaje
+  f_choose: Elige una opción
+  topics:
+  - Comprar una vivienda
+  - Arquitectura, reforma y obra
+  - Interiorismo
+  - Gestión de mi vivienda
+  - Otra consulta
+  consent_a: Al enviar este formulario, aceptas que contactemos contigo para responder a tu consulta. Consulta nuestra
+  consent_link: Política de privacidad
+  consent_b: para obtener más información.
+  privacy_url: /es/privacidad/
+  contact_btn: Enviar consulta
+  sending: Enviando…
+  contact_ok_h: Gracias por escribirnos.
+  contact_ok_p: Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.
+  contact_alt: Casa de piedra con buganvilla frente al mar
+  partners_eyebrow: Partners
+  partners_h2: ¿Eres profesional en la costa?
+  partners_h2_em: Colaboremos.
+  partners_text: Trabajamos con una red seleccionada de agencias inmobiliarias, constructoras, arquitectos, abogados, interioristas y empresas de gestión y mantenimiento. Te presentamos clientes internacionales con un encargo claro y un presupuesto validado, y nos ocupamos de la comunicación con ellos.
+  partners_points:
+  - Sin exclusividad
+  - Sin cuotas de entrada
+  - Clientes cualificados
+  p_error: No hemos podido enviar la solicitud. Inténtalo de nuevo o escríbenos a hello@findyourhaven.com.
+  p_subject: Nueva solicitud de partner (ES)
+  p_name: Nombre
+  p_company: Empresa o estudio
+  p_email: Correo electrónico
+  p_spec: Especialidad
+  p_msg: Cuéntanos brevemente sobre tu trabajo
+  p_specs:
+  - Agencia inmobiliaria
+  - Construcción y reforma
+  - Arquitectura y aparejadores
+  - Asesoría legal y gestoría
+  - Interiorismo
+  - Gestión de alquiler vacacional
+  - Mantenimiento
+  - Otra especialidad
+  p_consent: Al enviar este formulario, aceptas que contactemos contigo para hablar de una posible colaboración. Consulta nuestra
+  p_btn: Quiero ser partner
+  p_ok_h: Gracias por tu interés.
+  p_ok_p: Hemos recibido tu solicitud. Te escribiremos para contarte cómo funciona la colaboración.
+  region: Costa Catalana
+  scroll: Desliza
+  quote:
+  - Un equipo,
+  - todas las soluciones.
+  step: Paso
+  menu_index: Índice
+  regions:
+  - Costa Brava
+  - Maresme
+  - Costa Daurada
+  close: Cerrar
+en:
+  title: Find Your Haven — Your Property Partner on the Catalan Coast
+  description: 'Architects and property professionals who help you find and transform your home on the Catalan coast: Costa Brava, Maresme and Costa Daurada.'
+  hero_alt: Stone terrace with a pool overlooking the Mediterranean
+  hero_title:
+  - Find your
+  - Mediterranean haven.
+  hero_sub:
+  - Rooted in architecture.
+  - Focused on you.
+  hero_text: We are with you at every step to find and transform a place that truly feels like your own.
+  hero_cta: Tell us what you're looking for
+  hero_cta_short: Let's talk
+  hero_cta2: See how we work
+  points:
+  - One single point of contact
+  - No cost to you
+  - Trusted professionals
+  a_about: about
+  a_services: services
+  a_process: process
+  a_contact: contact
+  a_partners: partners
+  a_journal: journal-home
+  model_eyebrow: Our model
+  model_h2: As architects, we walk alongside you.
+  model_h2_em: Always on your side.
+  model_p1: Buying a home on the Mediterranean is about much more than finding a beautiful house. It means choosing a place, understanding its potential and making decisions with confidence. That is why we bring together architectural knowledge, property experience and a network of selected partners to guide you from the very first idea to the final detail.
+  model_p2: <strong>Our advisory service comes at no cost to you.</strong> We work with selected partners to help you move forward with sound judgement, transparency and peace of mind.
+  model_alt: Living room of a Mediterranean home opening onto the sea
+  model_flow_label: You, Find Your Haven and our partners
+  flow:
+  - t: You
+    p: We understand your needs, your priorities and the way you want to live.
+  - t: Find Your Haven
+    p: We guide you and coordinate the process with both an architectural and a property perspective.
+  - t: Our partners
+    p: We work with selected professionals whenever a project calls for it.
+  model_cta: Let's talk about what you have in mind
+  svc_eyebrow: Our services
+  svc_h2: From the first search to the keys.
+  svc_h2_em: Six services. One point of contact.
+  svc_intro: We help you make informed decisions at every stage, combining architectural vision, market knowledge and personal guidance.
+  services:
+  - t: Search & preliminary report
+    p: We analyse your needs and priorities to set a clear starting point, then look for options aligned with your lifestyle and your goals, looking beyond the photographs.
+    url: /en/blog/buying-property-costa-brava-foreigner-guide/
+    img: /assets/img/hero/hero-terraza-tablet.jpg
+  - t: Technical due diligence
+    p: We review the relevant technical aspects of the property so you understand its condition, its possibilities and the points worth studying before you decide.
+    url: /en/blog/technical-due-diligence-property-explained/
+    img: /assets/img/home/servicios.jpg
+  - t: Representation
+    p: We defend your interests throughout the process, ease communication between the parties and help you move forward with greater clarity.
+    url: /en/blog/legal-mistakes-buying-without-lawyer/
+    img: /assets/img/home/contacto.jpg
+  - t: Architecture, renovation & construction
+    p: We assess the potential of every space and guide you in defining improvements, renovations and solutions tailored to your needs.
+    url: /en/blog/renovation-cost-catalan-coast-guide/
+    img: /assets/img/home/paso-02.jpg
+  - t: Interior design
+    p: We shape functional, serene interiors with natural materials, careful proportions and an aesthetic connected to the Mediterranean.
+    url: '#contact'
+    img: /assets/img/home/paso-03.jpg
+  - t: Management
+    p: We coordinate the professionals and the different stages of the project so the process is simpler, more orderly and coherent.
+    url: /en/blog/running-costs-holiday-home-costa-brava/
+    img: /assets/img/home/paso-04.jpg
+  svc_alt: Stone house among olive trees overlooking the sea
+  svc_cta: Tell us about your project
+  proc_eyebrow: How we work
+  proc_h2: A clear process.
+  proc_h2_em: Decisions made with confidence.
+  proc_intro: Every search is different. Our method helps you move forward step by step, with an overall view and professional support all the way.
+  steps:
+  - t: We listen
+    p: 'We start by getting to know you: what you are looking for, how you want to live and what matters to you.'
+  - t: We set the course
+    p: We turn your priorities into clear criteria to steer the search and weigh up the options meaningfully.
+  - t: We analyse and decide
+    p: We study every opportunity from an architectural and property perspective so you can decide with better information.
+  - t: We take you to the next step
+    p: We coordinate the professionals you need and help you move towards the purchase, the renovation or getting the space ready.
+  proc_cta: Let's start with a conversation
+  mag_eyebrow: Journal
+  mag_h2: Ideas, places and perspectives on the Mediterranean.
+  mag_intro: A selection of stories to discover the local architecture, materials, interiors and ways of living that make this coast special. Inspiration and knowledge to see every space with fresh eyes.
+  mag_all: All
+  mag_read: Read article
+  mag_btn: Explore the journal
+  guide_eyebrow: Free guide
+  guide_title: The Costa Brava Buying Guide · 2026 Edition
+  guide_text: Leave your email and we'll send it to you, along with the occasional news from the coast.
+  guide_next: /en/thank-you-guide/
+  guide_subject: New subscriber — Costa Brava Guide 2026
+  guide_placeholder: Your email
+  guide_btn: Get the guide
+  guide_note: By subscribing you accept our
+  guide_note_link: privacy policy
+  form_action: https://formspree.io/f/YOUR_FORMSPREE_ID
+  contact_eyebrow: Contact
+  contact_h2: Your next chapter can start here.
+  contact_text: Tell us what you are looking for or what project you have in mind. We will listen to your ideas and show you how we can help.
+  contact_error: We couldn't send your message. Please try again, or email us at hello@findyourhaven.com.
+  contact_subject: New website enquiry (EN)
+  lang_code: EN
+  hp_label: Leave empty
+  f_name: Name
+  f_email: Email address
+  f_phone: Phone
+  f_optional: (optional)
+  f_topic: How can we help?
+  f_msg: Message
+  f_choose: Choose an option
+  topics:
+  - Buying a home
+  - Architecture, renovation & construction
+  - Interior design
+  - Managing my home
+  - Something else
+  consent_a: By submitting this form, you agree that we may contact you to answer your enquiry. See our
+  consent_link: Privacy policy
+  consent_b: for more information.
+  privacy_url: /en/privacy/
+  contact_btn: Send enquiry
+  sending: Sending…
+  contact_ok_h: Thank you for writing to us.
+  contact_ok_p: We have received your message and will be in touch soon.
+  contact_alt: Stone house with bougainvillea facing the sea
+  partners_eyebrow: Partners
+  partners_h2: A professional on the coast?
+  partners_h2_em: Let’s work together.
+  partners_text: We work with a selected network of estate agencies, builders, architects, lawyers, interior designers and property management and maintenance companies. We introduce you to international clients with a clear brief and a validated budget, and we handle the communication with them.
+  partners_points:
+  - No exclusivity
+  - No joining fees
+  - Qualified clients
+  p_error: We couldn’t send your application. Please try again, or email us at hello@findyourhaven.com.
+  p_subject: New partner application (EN)
+  p_name: Name
+  p_company: Company or studio
+  p_email: Email address
+  p_spec: Field
+  p_msg: Tell us briefly about your work
+  p_specs:
+  - Estate agency
+  - Construction & renovation
+  - Architects & surveyors
+  - Legal & administrative advice
+  - Interior design
+  - Holiday rental management
+  - Maintenance
+  - Other
+  p_consent: By submitting this form, you agree that we may contact you to discuss a possible collaboration. See our
+  p_btn: Become a partner
+  p_ok_h: Thank you for your interest.
+  p_ok_p: We have received your application and will write to you to explain how the collaboration works.
+  region: The Catalan Coast
+  scroll: Scroll
+  quote:
+  - One team,
+  - every solution.
+  step: Step
+  menu_index: Index
+  regions:
+  - Costa Brava
+  - Maresme
+  - Costa Daurada
+  close: Close
+nl:
+  title: Find Your Haven — Jouw Property Partner aan de Catalaanse kust
+  description: 'Architecten en vastgoedprofessionals die je helpen je woning aan de Catalaanse kust te vinden en te transformeren: Costa Brava, Maresme en Costa Daurada.'
+  hero_alt: Stenen terras met zwembad en uitzicht op de Middellandse Zee
+  hero_title:
+  - Vind jouw
+  - mediterrane toevluchtsoord.
+  hero_sub:
+  - Geworteld in architectuur.
+  - Gericht op jou.
+  hero_text: We begeleiden je bij elke stap om een plek te vinden en te transformeren die echt als de jouwe voelt.
+  hero_cta: Vertel ons wat je zoekt
+  hero_cta_short: Laten we praten
+  hero_cta2: Ontdek hoe wij werken
+  points:
+  - Eén aanspreekpunt
+  - Zonder kosten voor jou
+  - Betrouwbare professionals
+  a_about: over-ons
+  a_services: diensten
+  a_process: proces
+  a_contact: contact
+  a_partners: partners
+  a_journal: journal-home
+  model_eyebrow: Ons model
+  model_h2: Als architecten staan we naast je.
+  model_h2_em: Altijd aan jouw kant.
+  model_p1: Een woning kopen aan de Middellandse Zee is veel meer dan een mooi huis vinden. Het is een plek kiezen, het potentieel ervan begrijpen en met vertrouwen beslissingen nemen. Daarom brengen we architectonische kennis, vastgoedervaring en een netwerk van geselecteerde partners samen om je te begeleiden van het eerste idee tot het laatste detail.
+  model_p2: <strong>Onze begeleiding kost jou niets.</strong> We werken met geselecteerde partners om je te helpen vooruit te gaan met inzicht, transparantie en gemoedsrust.
+  model_alt: Woonkamer van een mediterraan huis met zicht op zee
+  model_flow_label: Jij, Find Your Haven en onze partners
+  flow:
+  - t: Jij
+    p: We begrijpen je behoeften, je prioriteiten en de manier waarop je wilt leven.
+  - t: Find Your Haven
+    p: We geven je richting en coördineren het proces met een architectonische én vastgoedblik.
+  - t: Onze partners
+    p: We werken samen met geselecteerde professionals wanneer een project daarom vraagt.
+  model_cta: Laten we praten over wat je voor ogen hebt
+  svc_eyebrow: Onze diensten
+  svc_h2: Van de eerste zoektocht tot de sleutels.
+  svc_h2_em: Zes diensten. Eén aanspreekpunt.
+  svc_intro: We helpen je in elke fase weloverwogen beslissingen te nemen, met een architectonische visie, marktkennis en persoonlijke begeleiding.
+  services:
+  - t: Zoektocht & voorlopig rapport
+    p: We analyseren je behoeften en prioriteiten om een helder vertrekpunt te bepalen en zoeken opties die passen bij je levensstijl en je doelen, verder kijkend dan de foto’s.
+    url: /nl/blog/huis-kopen-costa-brava-buitenlander-gids/
+    img: /assets/img/hero/hero-terraza-tablet.jpg
+  - t: Technische due diligence
+    p: We controleren de relevante technische aspecten van de woning, zodat je de staat, de mogelijkheden en de aandachtspunten begrijpt voordat je beslist.
+    url: /nl/blog/technische-due-diligence-vastgoed-uitgelegd/
+    img: /assets/img/home/servicios.jpg
+  - t: Vertegenwoordiging
+    p: We behartigen je belangen tijdens het hele proces, vergemakkelijken de communicatie tussen de partijen en helpen je met meer duidelijkheid vooruit.
+    url: /nl/blog/juridische-fouten-kopen-zonder-advocaat/
+    img: /assets/img/home/contacto.jpg
+  - t: Architectuur, renovatie & bouw
+    p: We beoordelen het potentieel van elke ruimte en begeleiden je bij het bepalen van verbeteringen, renovaties en oplossingen op maat.
+    url: /nl/blog/renovatiekosten-catalaanse-kust-gids/
+    img: /assets/img/home/paso-02.jpg
+  - t: Interieurontwerp
+    p: We geven vorm aan functionele, serene interieurs met natuurlijke materialen, zorgvuldige verhoudingen en een esthetiek verbonden met de Middellandse Zee.
+    url: '#contact'
+    img: /assets/img/home/paso-03.jpg
+  - t: Beheer
+    p: We coördineren de professionals en de verschillende fasen van het project, zodat het proces eenvoudiger, overzichtelijker en samenhangender verloopt.
+    url: /nl/blog/kosten-onderhoud-tweede-woning-costa-brava-per-jaar/
+    img: /assets/img/home/paso-04.jpg
+  svc_alt: Stenen huis tussen olijfbomen met uitzicht op zee
+  svc_cta: Vertel ons over je project
+  proc_eyebrow: Hoe wij werken
+  proc_h2: Een helder proces.
+  proc_h2_em: Beslissingen met vertrouwen.
+  proc_intro: Elke zoektocht is anders. Onze methode helpt je stap voor stap vooruit, met een totaalbeeld en professionele begeleiding gedurende het hele traject.
+  steps:
+  - t: We luisteren
+    p: 'We beginnen met je te leren kennen: wat je zoekt, hoe je wilt leven en wat voor jou belangrijk is.'
+  - t: We bepalen de koers
+    p: We vertalen je prioriteiten naar heldere criteria om de zoektocht te sturen en de opties zinvol te beoordelen.
+  - t: We analyseren en beslissen
+    p: We bestuderen elke kans vanuit een architectonisch en vastgoedperspectief, zodat je met meer informatie kunt beslissen.
+  - t: We begeleiden je naar de volgende stap
+    p: We coördineren de nodige professionals en helpen je op weg naar de aankoop, de renovatie of het klaarmaken van de ruimte.
+  proc_cta: Laten we beginnen met een gesprek
+  mag_eyebrow: Journal
+  mag_h2: Ideeën, plekken en blikken op de Middellandse Zee.
+  mag_intro: Een selectie verhalen om de lokale architectuur, materialen, interieurs en manieren van leven te ontdekken die deze kust bijzonder maken. Inspiratie en kennis om elke ruimte met andere ogen te bekijken.
+  mag_all: Alles
+  mag_read: Lees artikel
+  mag_btn: Ontdek het journal
+  guide_eyebrow: Gratis gids
+  guide_title: De Costa Brava Koopgids · Editie 2026
+  guide_text: Laat je e-mailadres achter en we sturen hem je toe, af en toe met nieuws van de kust.
+  guide_next: /nl/bedankt-gids/
+  guide_subject: Nieuwe abonnee — Costa Brava Gids 2026
+  guide_placeholder: Jouw e-mail
+  guide_btn: Ontvang de gids
+  guide_note: Door je in te schrijven ga je akkoord met ons
+  guide_note_link: privacybeleid
+  form_action: https://formspree.io/f/YOUR_FORMSPREE_ID
+  contact_eyebrow: Contact
+  contact_h2: Je volgende hoofdstuk kan hier beginnen.
+  contact_text: Vertel ons wat je zoekt of welk project je voor ogen hebt. We luisteren naar je ideeën en laten je weten hoe we je kunnen helpen.
+  contact_error: Je bericht kon niet worden verzonden. Probeer het opnieuw of mail ons op hello@findyourhaven.com.
+  contact_subject: Nieuwe aanvraag via de website (NL)
+  lang_code: NL
+  hp_label: Niet invullen
+  f_name: Naam
+  f_email: E-mailadres
+  f_phone: Telefoon
+  f_optional: (optioneel)
+  f_topic: Waarmee kunnen we je helpen?
+  f_msg: Bericht
+  f_choose: Kies een optie
+  topics:
+  - Een woning kopen
+  - Architectuur, renovatie & bouw
+  - Interieurontwerp
+  - Beheer van mijn woning
+  - Iets anders
+  consent_a: Door dit formulier te verzenden, ga je ermee akkoord dat we contact met je opnemen om je vraag te beantwoorden. Lees ons
+  consent_link: privacybeleid
+  consent_b: voor meer informatie.
+  privacy_url: /nl/privacy/
+  contact_btn: Verstuur aanvraag
+  sending: Verzenden…
+  contact_ok_h: Bedankt voor je bericht.
+  contact_ok_p: We hebben je bericht ontvangen en nemen snel contact met je op.
+  contact_alt: Stenen huis met bougainville aan zee
+  partners_eyebrow: Partners
+  partners_h2: Professional aan de kust?
+  partners_h2_em: Laten we samenwerken.
+  partners_text: We werken met een geselecteerd netwerk van makelaars, aannemers, architecten, advocaten, interieurontwerpers en bedrijven voor beheer en onderhoud. We stellen je voor aan internationale klanten met een duidelijke opdracht en een gevalideerd budget, en wij verzorgen de communicatie met hen.
+  partners_points:
+  - Geen exclusiviteit
+  - Geen instapkosten
+  - Gekwalificeerde klanten
+  p_error: Je aanvraag kon niet worden verzonden. Probeer het opnieuw of mail ons op hello@findyourhaven.com.
+  p_subject: Nieuwe partneraanvraag (NL)
+  p_name: Naam
+  p_company: Bedrijf of bureau
+  p_email: E-mailadres
+  p_spec: Vakgebied
+  p_msg: Vertel ons kort over je werk
+  p_specs:
+  - Makelaardij
+  - Bouw & renovatie
+  - Architecten & bouwkundigen
+  - Juridisch & administratief advies
+  - Interieurontwerp
+  - Beheer vakantieverhuur
+  - Onderhoud
+  - Anders
+  p_consent: Door dit formulier te verzenden, ga je ermee akkoord dat we contact met je opnemen over een mogelijke samenwerking. Lees ons
+  p_btn: Word partner
+  p_ok_h: Bedankt voor je interesse.
+  p_ok_p: We hebben je aanvraag ontvangen en laten je weten hoe de samenwerking werkt.
+  region: De Catalaanse kust
+  scroll: Scroll
+  quote:
+  - Eén team,
+  - alle oplossingen.
+  step: Stap
+  menu_index: Index
+  regions:
+  - Costa Brava
+  - Maresme
+  - Costa Daurada
+  close: Sluiten
+fr:
+  title: Find Your Haven — Votre Property Partner sur la Côte Catalane
+  description: 'Des architectes et professionnels de l''immobilier qui vous aident à trouver et transformer votre maison sur la côte catalane : Costa Brava, Maresme et Costa Daurada.'
+  hero_alt: Terrasse en pierre avec piscine face à la Méditerranée
+  hero_title:
+  - Trouvez votre
+  - refuge méditerranéen.
+  hero_sub:
+  - Enracinés dans l'architecture.
+  - Centrés sur vous.
+  hero_text: Nous vous accompagnons à chaque étape pour trouver et transformer un lieu que vous sentirez vraiment vôtre.
+  hero_cta: Dites-nous ce que vous cherchez
+  hero_cta_short: Parlons-en
+  hero_cta2: Découvrez notre méthode
+  points:
+  - Un seul interlocuteur
+  - Sans frais pour vous
+  - Des professionnels de confiance
+  a_about: qui-sommes-nous
+  a_services: services
+  a_process: processus
+  a_contact: contact
+  a_partners: partenaires
+  a_journal: journal-home
+  model_eyebrow: Notre modèle
+  model_h2: En architectes, nous vous accompagnons.
+  model_h2_em: Toujours à vos côtés.
+  model_p1: Acheter une maison en Méditerranée, c'est bien plus que trouver une belle maison. C'est choisir un lieu, comprendre son potentiel et prendre des décisions en toute confiance. C'est pourquoi nous réunissons savoir-faire architectural, expérience immobilière et un réseau de partenaires sélectionnés pour vous accompagner de la première idée jusqu'au dernier détail.
+  model_p2: <strong>Notre accompagnement ne vous coûte rien.</strong> Nous travaillons avec des partenaires sélectionnés pour vous aider à avancer avec discernement, transparence et sérénité.
+  model_alt: Salon d'une maison méditerranéenne ouvert sur la mer
+  model_flow_label: Vous, Find Your Haven et nos partenaires
+  flow:
+  - t: Vous
+    p: Nous comprenons vos besoins, vos priorités et la façon dont vous souhaitez vivre.
+  - t: Find Your Haven
+    p: Nous vous orientons et coordonnons le processus avec un regard à la fois architectural et immobilier.
+  - t: Nos partenaires
+    p: Nous collaborons avec des professionnels sélectionnés lorsque chaque projet le demande.
+  model_cta: Parlons de ce que vous avez en tête
+  svc_eyebrow: Nos services
+  svc_h2: De la première recherche à la remise des clés.
+  svc_h2_em: Six services. Un seul interlocuteur.
+  svc_intro: Nous vous aidons à prendre des décisions éclairées à chaque étape, en associant vision architecturale, connaissance du marché et accompagnement personnalisé.
+  services:
+  - t: Recherche et rapport préliminaire
+    p: Nous analysons vos besoins et vos priorités pour définir un point de départ clair, puis recherchons des options en accord avec votre mode de vie et vos objectifs, au-delà des photos.
+    url: /fr/blog/acheter-maison-costa-brava-etranger-guide/
+    img: /assets/img/hero/hero-terraza-tablet.jpg
+  - t: Due diligence technique
+    p: Nous examinons les aspects techniques importants du bien pour vous aider à comprendre son état, ses possibilités et les points à étudier avant de décider.
+    url: /fr/blog/due-diligence-technique-immobiliere-explication/
+    img: /assets/img/home/servicios.jpg
+  - t: Représentation
+    p: Nous défendons vos intérêts tout au long du processus, facilitons la communication entre les parties et vous aidons à avancer avec davantage de clarté.
+    url: /fr/blog/erreurs-juridiques-achat-sans-avocat/
+    img: /assets/img/home/contacto.jpg
+  - t: Architecture, rénovation et travaux
+    p: Nous évaluons le potentiel de chaque espace et vous accompagnons dans la définition d'améliorations, de rénovations et de solutions adaptées à vos besoins.
+    url: /fr/blog/cout-renovation-cote-catalane-guide/
+    img: /assets/img/home/paso-02.jpg
+  - t: Architecture d'intérieur
+    p: Nous concevons des intérieurs fonctionnels et sereins, avec des matériaux naturels, des proportions soignées et une esthétique liée à la Méditerranée.
+    url: '#contact'
+    img: /assets/img/home/paso-03.jpg
+  - t: Gestion
+    p: Nous coordonnons les professionnels et les différentes phases du projet pour que le processus soit plus simple, plus ordonné et plus cohérent.
+    url: /fr/blog/cout-annuel-entretien-maison-costa-brava/
+    img: /assets/img/home/paso-04.jpg
+  svc_alt: Maison en pierre parmi les oliviers avec vue sur la mer
+  svc_cta: Parlez-nous de votre projet
+  proc_eyebrow: Notre méthode
+  proc_h2: Un processus clair.
+  proc_h2_em: Des décisions en confiance.
+  proc_intro: Chaque recherche est différente. Notre méthode vous aide à avancer pas à pas, avec une vision d'ensemble et un accompagnement professionnel tout au long du parcours.
+  steps:
+  - t: Nous vous écoutons
+    p: 'Nous commençons par apprendre à vous connaître : ce que vous cherchez, comment vous souhaitez vivre et ce qui compte pour vous.'
+  - t: Nous fixons le cap
+    p: Nous traduisons vos priorités en critères clairs pour orienter la recherche et évaluer les options avec justesse.
+  - t: Nous analysons et décidons
+    p: Nous étudions chaque opportunité sous un angle architectural et immobilier pour que vous puissiez décider en connaissance de cause.
+  - t: Nous vous accompagnons jusqu'à l'étape suivante
+    p: Nous coordonnons les professionnels nécessaires et vous aidons à avancer vers l'achat, la rénovation ou la mise en état des lieux.
+  proc_cta: Commençons par une conversation
+  mag_eyebrow: Journal
+  mag_h2: Idées, lieux et regards sur la Méditerranée.
+  mag_intro: Une sélection d'histoires pour découvrir l'architecture locale, les matériaux, les intérieurs et les façons de vivre qui rendent cette côte unique. De l'inspiration et des connaissances pour regarder chaque espace d'un autre œil.
+  mag_all: Tous
+  mag_read: Lire l'article
+  mag_btn: Explorez le journal
+  guide_eyebrow: Guide gratuit
+  guide_title: Le guide d'achat Costa Brava · Édition 2026
+  guide_text: Laissez-nous votre email et nous vous l'envoyons, avec de temps en temps des nouvelles de la côte.
+  guide_next: /fr/merci-guide/
+  guide_subject: Nouvel abonné — Guide Costa Brava 2026
+  guide_placeholder: Votre email
+  guide_btn: Recevoir le guide
+  guide_note: En vous abonnant, vous acceptez notre
+  guide_note_link: politique de confidentialité
+  form_action: https://formspree.io/f/YOUR_FORMSPREE_ID
+  contact_eyebrow: Contact
+  contact_h2: Votre prochain chapitre peut commencer ici.
+  contact_text: Dites-nous ce que vous cherchez ou quel projet vous avez en tête. Nous écouterons vos idées et vous indiquerons comment nous pouvons vous aider.
+  contact_error: Votre message n'a pas pu être envoyé. Réessayez ou écrivez-nous à hello@findyourhaven.com.
+  contact_subject: Nouvelle demande via le site (FR)
+  lang_code: FR
+  hp_label: Ne pas remplir
+  f_name: Nom
+  f_email: Adresse email
+  f_phone: Téléphone
+  f_optional: (facultatif)
+  f_topic: Comment pouvons-nous vous aider ?
+  f_msg: Message
+  f_choose: Choisissez une option
+  topics:
+  - Acheter une maison
+  - Architecture, rénovation et travaux
+  - Architecture d'intérieur
+  - Gestion de ma maison
+  - Autre demande
+  consent_a: En envoyant ce formulaire, vous acceptez que nous vous contactions pour répondre à votre demande. Consultez notre
+  consent_link: Politique de confidentialité
+  consent_b: pour en savoir plus.
+  privacy_url: /fr/confidentialite/
+  contact_btn: Envoyer la demande
+  sending: Envoi…
+  contact_ok_h: Merci de nous avoir écrit.
+  contact_ok_p: Nous avons bien reçu votre message et vous recontacterons très bientôt.
+  contact_alt: Maison en pierre avec bougainvillier face à la mer
+  partners_eyebrow: Partenaires
+  partners_h2: Professionnel sur la côte ?
+  partners_h2_em: Travaillons ensemble.
+  partners_text: Nous travaillons avec un réseau sélectionné d’agences immobilières, d’entreprises de travaux, d’architectes, d’avocats, d’architectes d’intérieur et de sociétés de gestion et d’entretien. Nous vous présentons des clients internationaux avec un projet clair et un budget validé, et nous gérons la communication avec eux.
+  partners_points:
+  - Sans exclusivité
+  - Sans frais d’entrée
+  - Des clients qualifiés
+  p_error: Votre candidature n’a pas pu être envoyée. Réessayez ou écrivez-nous à hello@findyourhaven.com.
+  p_subject: Nouvelle candidature partenaire (FR)
+  p_name: Nom
+  p_company: Entreprise ou cabinet
+  p_email: Adresse email
+  p_spec: Spécialité
+  p_msg: Parlez-nous brièvement de votre activité
+  p_specs:
+  - Agence immobilière
+  - Construction et rénovation
+  - Architectes et économistes
+  - Conseil juridique et administratif
+  - Architecture d’intérieur
+  - Gestion de location saisonnière
+  - Entretien
+  - Autre
+  p_consent: En envoyant ce formulaire, vous acceptez que nous vous contactions au sujet d’une éventuelle collaboration. Consultez notre
+  p_btn: Devenir partenaire
+  p_ok_h: Merci de votre intérêt.
+  p_ok_p: Nous avons bien reçu votre candidature et vous écrirons pour vous expliquer comment fonctionne la collaboration.
+  region: La Côte Catalane
+  scroll: Défiler
+  quote:
+  - Une équipe,
+  - toutes les solutions.
+  step: Étape
+  menu_index: Index
+  regions:
+  - Costa Brava
+  - Maresme
+  - Costa Daurada
+  close: Fermer
