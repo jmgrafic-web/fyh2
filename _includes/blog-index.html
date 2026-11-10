@@ -1,0 +1,41 @@
+{% assign lang = page.lang %}
+{% assign t = site.data.strings[lang] %}
+{% assign items = site.articles | where: "lang", lang | sort: "date" | reverse %}
+{% assign starts = items | where: "start_here", true | sort: "date" %}
+<section class="section" style="padding-top: clamp(90px, 14vw, 130px);">
+  <div class="wrap">
+    <p class="eyebrow">{{ t.nav_blog }}</p>
+    <h1>{{ page.h1 }}</h1>
+    <p class="lede">{{ page.lede }}</p>
+
+    <div class="journal-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input type="search" data-journal-search placeholder="{{ t.blog_search_ph }}" aria-label="{{ t.blog_search_label }}">
+    </div>
+
+    <div data-browse>
+      <div class="block-head"><h2>{{ t.blog_topics_title }}</h2><p>{{ t.blog_topics_sub }}</p></div>
+      {% include topic-cards.html lang=lang t=t %}
+
+      <div class="block-head"><h2>{{ t.blog_start_title }}</h2><p>{{ t.blog_start_sub }}</p></div>
+      <div class="article-grid">
+        {% for a in starts %}{% include card.html a=a t=t badge=false %}{% endfor %}
+      </div>
+
+      {{ include.content }}
+
+      <div class="block-head"><h2>{{ t.blog_latest_title }}</h2></div>
+      <div class="article-grid">
+        {% for a in items limit: 6 %}{% include card.html a=a t=t badge=false %}{% endfor %}
+      </div>
+    </div>
+
+    <div data-journal-results hidden>
+      <div class="block-head"><h2>{{ t.blog_search_results }}</h2></div>
+      <div class="article-grid" data-journal-grid>
+        {% for a in items %}{% include card.html a=a t=t badge=false %}{% endfor %}
+      </div>
+      <p class="journal-empty" data-journal-empty>{{ t.blog_search_empty }}</p>
+    </div>
+  </div>
+</section>

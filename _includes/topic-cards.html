@@ -1,0 +1,17 @@
+{%- comment -%} the 5 topic cards. params: lang, t, skip (category to skip, optional) {%- endcomment -%}
+{% assign tp = site.data.topics %}
+{% assign all_l = site.articles | where: "lang", include.lang %}
+<div class="topic-grid reveal">
+  {% for c in tp.order %}
+    {% unless c == include.skip %}
+    {% assign cd = tp.cats[c][include.lang] %}
+    {% assign cnt = all_l | where: "category", c | size %}
+    <a class="topic-card" href="{{ '/' | append: include.lang | append: '/blog/' | append: tp.seg[include.lang] | append: '/' | append: cd.slug | append: '/' | relative_url }}">
+      <span class="topic-count">{{ cnt }} {% if cnt == 1 %}{{ include.t.hub_count_one }}{% else %}{{ include.t.hub_count_many }}{% endif %}</span>
+      <h3>{{ cd.name }}</h3>
+      <p>{{ cd.desc }}</p>
+      <span class="read">→</span>
+    </a>
+    {% endunless %}
+  {% endfor %}
+</div>

@@ -1,0 +1,10 @@
+{%- comment -%} Tarjeta editorial de la revista (portada): imagen, categoría, título breve y «Leer artículo». {%- endcomment -%}
+{%- assign a = include.a -%}
+{%- assign short = a.short_title | default: a.title | split: ":" | first | strip -%}
+{%- assign cat = site.data.topics.cats[a.category][a.lang] -%}
+<a class="mcard" href="{{ a.url | relative_url }}">
+  <div class="mcard-img">{% if a.image %}<img src="{{ a.image }}" alt="" loading="lazy" decoding="async">{% endif %}</div>
+  <span class="mcard-cat">{{ cat.name | default: a.topic }}</span>
+  <h3>{{ short }}</h3>
+  <span class="text-link">{{ include.read }} <span aria-hidden="true">→</span></span>
+</a>

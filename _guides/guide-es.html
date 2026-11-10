@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8">
+<!-- Generado por build_guides.py: no editar a mano (editar head.tpl o los textos del script). -->
+<style>
+
+@page{ margin:0; }
+html{ zoom:1.3; }   /* compensa el escalado (≈77 %) de wkhtmltopdf sin Qt parcheado */
+*{ box-sizing:border-box; margin:0; padding:0; }
+html,body{ width:210mm; background:#F7F5F2; }
+body{ font-family:"FYHDM", Arial, sans-serif; font-size:10.5pt; line-height:1.62; color:#1E1C1A; }
+.page{ position:relative; width:210mm; height:296.6mm; overflow:hidden; page-break-after:always; background:#F7F5F2; }
+.page:last-child{ page-break-after:auto; }
+.inner{ padding:30mm 24mm 0 24mm; }
+
+h1,h2{ font-family:"FYHCG Light", Georgia, serif; font-weight:normal; color:#1E1C1A; }
+b, strong{ font-weight:normal; }
+h2{ font-size:30pt; line-height:1.1; letter-spacing:-.2pt; margin:0 0 7mm; }
+h2 em, h1 em{ font-family:"FYHCG Italic", Georgia, serif; font-style:normal; font-weight:normal; color:#A8794F; }
+h3{ font-family:"FYHCG Medium", Georgia, serif; font-weight:normal; color:#1E1C1A; font-size:15pt; line-height:1.25; margin:7mm 0 1.6mm; }
+.kicker{ font-family:"FYHDM SemiBold", Arial, sans-serif; font-size:8pt; font-weight:normal; letter-spacing:2.2pt; text-transform:uppercase; color:#8C8680; margin-bottom:4mm; }
+p{ margin:0 0 3.6mm; color:#3b3835; }
+.rule{ width:16mm; height:2px; background:#405C70; margin:0 0 7mm; }
+
+.box{ background:#E8E0D4; border-left:3px solid #405C70; padding:5mm 6mm; margin:8mm 0 0; font-size:10.5pt; }
+.num{ font-family:"FYHCG Italic", Georgia, serif; font-style:normal; font-weight:normal; color:#A8794F; font-size:15pt; margin-right:2mm; }
+
+table.cols{ width:100%; border-collapse:collapse; margin-top:3mm; }
+table.cols td{ width:50%; vertical-align:top; padding:0 6mm 7mm 0; }
+.zone{ border-top:1px solid #C9BCAB; padding-top:3.5mm; }
+.zone h4{ font-family:"FYHCG Medium", Georgia, serif; font-weight:normal; font-size:15pt; margin-bottom:1mm; }
+.zone p{ font-size:9.5pt; color:#5A5652; margin:0; }
+.price{ font-family:"FYHDM SemiBold", Arial, sans-serif; font-size:8.5pt; font-weight:normal; letter-spacing:.6pt; color:#405C70; margin-top:1.6mm; }
+.err{ border-top:1px solid #C9BCAB; padding:4.2mm 0; }
+.err:last-of-type{ border-bottom:1px solid #C9BCAB; }
+.err b{ font-family:"FYHDM SemiBold", Arial, sans-serif; font-weight:normal; color:#1E1C1A; }
+
+.foot{ position:absolute; left:24mm; right:24mm; bottom:12mm; font-size:7.5pt; letter-spacing:1.6pt; text-transform:uppercase; color:#8C8680; border-top:1px solid #C9BCAB; padding-top:3mm; }
+.foot span{ float:right; }
+.note{ font-size:8.5pt; color:#8C8680; margin-top:6mm; }
+
+/* portada y cierre (a sangre) */
+.dark{ color:#F7F5F2; }
+.cover{ background:#22333F; box-shadow:8mm 8mm 0 0 #22333F, 0 8mm 0 0 #22333F, 8mm 0 0 0 #22333F; }
+.cover table, .closing table{ width:100%; height:296mm; border-collapse:collapse; }
+.cover td, .closing td{ text-align:center; vertical-align:middle; }
+.cover img{ width:21mm; height:auto; margin:0 auto 12mm; display:block; }
+.cover .eyebrow{ font-family:"FYHDM SemiBold", Arial, sans-serif; font-size:8.5pt; font-weight:normal; letter-spacing:3.2pt; text-transform:uppercase; color:rgba(247,245,242,.7); margin-bottom:9mm; }
+.cover h1{ font-family:"FYHCG Light", Georgia, serif; font-size:50pt; line-height:1.03; letter-spacing:-.6pt; color:#F7F5F2; padding:0 22mm; margin-bottom:7mm; }
+.cover h1 em{ color:#C4956A; }
+.cover .sub{ font-family:"FYHCG Italic", Georgia, serif; font-style:normal; font-size:19pt; color:#C4956A; margin-bottom:26mm; }
+.cover .tag{ font-size:8pt; letter-spacing:2.4pt; text-transform:uppercase; color:rgba(247,245,242,.6); }
+.closing{ background:#405C70; box-shadow:8mm 8mm 0 0 #405C70, 0 8mm 0 0 #405C70, 8mm 0 0 0 #405C70; }
+.closing .wrapc{ padding:0 28mm; }
+.closing img{ width:15mm; height:auto; margin:0 auto 10mm; display:block; }
+.closing h2{ color:#F7F5F2; font-size:34pt; margin-bottom:8mm; }
+.closing h2 em{ color:#E8E0D4; }
+.closing p{ color:rgba(247,245,242,.88); font-size:11pt; }
+.closing .mail{ font-family:"FYHCG Light", Georgia, serif; font-size:21pt; color:#F7F5F2; margin-top:12mm; margin-bottom:1mm; }
+.closing .web{ font-size:9pt; letter-spacing:2pt; text-transform:uppercase; color:rgba(247,245,242,.72); }
+.closing .legal{ position:absolute; left:28mm; right:28mm; bottom:12mm; font-size:7.5pt; line-height:1.5; color:rgba(247,245,242,.6); border-top:1px solid rgba(247,245,242,.25); padding-top:3mm; text-align:left; }
+</style></head>
+<body>
+
+<div class="page cover"><table><tr><td>
+  <img src="../assets/img/brand/fyh-mark-white.png" alt="">
+  <div class="eyebrow">Find Your Haven &nbsp;·&nbsp; Costa Catalana</div>
+  <h1>Guía para comprar en la <em>Costa Brava</em></h1>
+  <div class="sub">Edición 2026</div>
+  <div class="tag">Arraigados en la arquitectura. Centrados en ti.</div>
+</td></tr></table></div>
+
+<div class="page"><div class="inner">
+  <div class="kicker">Antes de empezar</div>
+  <h2>Lo que vas a encontrar <em>en esta guía</em></h2>
+  <div class="rule"></div>
+  <p>Esta guía reúne, de forma directa y sin relleno, lo que cualquier comprador extranjero necesita saber antes de comprar una vivienda en la Costa Brava o en el resto de la costa catalana: el proceso real paso a paso, los errores más caros y más frecuentes, y una primera fotografía de las zonas donde trabajamos.</p>
+  <p>No es un argumentario comercial. Es el mismo criterio que aplicamos con cada cliente, resumido en unas páginas.</p>
+  <div class="box"><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Un consejo antes de seguir leyendo.</b> Si ya tienes un inmueble concreto en mente, la recomendación más valiosa de esta guía es la del paso 3: no avances sin una valoración técnica, sea con nosotros o con cualquier otro profesional serio.</div>
+</div>
+<div class="foot">Find Your Haven · Guía Costa Brava 2026 <span>2</span></div></div>
+
+<div class="page"><div class="inner">
+  <div class="kicker">Parte 01</div>
+  <h2>El proceso real, <em>paso a paso</em></h2>
+  <div class="rule"></div>
+  <h3 style="margin-top:0"><span class="num">1.</span>NIE, antes de necesitarlo</h3>
+  <p>Es obligatorio para comprar, abrir cuenta bancaria o contratar suministros. Tramitarlo con antelación evita perder un buen inmueble mientras esperas cita.</p>
+  <h3><span class="num">2.</span>Presupuesto real, no solo el precio del inmueble</h3>
+  <p>Suma impuestos de transmisión, notaría, registro, gestoría y, si aplica, una horquilla de reforma desde el primer momento.</p>
+  <h3><span class="num">3.</span>Valoración técnica antes de comprometerte</h3>
+  <p>Estructura, cubierta, instalaciones, situación urbanística. Es lo único que te permite negociar con datos reales, no con esperanza.</p>
+  <h3><span class="num">4.</span>Arras y contrato, revisados por un profesional</h3>
+  <p>Cláusulas de penalización, plazos y condición suspensiva si dependes de financiación: nunca con una plantilla genérica traducida.</p>
+  <h3><span class="num">5.</span>Firma ante notario y trámites posteriores</h3>
+  <p>Registro de la propiedad, cambio de titularidad de suministros, IBI y, si no residirás de forma permanente, representación fiscal como no residente.</p>
+</div>
+<div class="foot">Find Your Haven · Guía Costa Brava 2026 <span>3</span></div></div>
+
+<div class="page"><div class="inner">
+  <div class="kicker">Parte 02</div>
+  <h2>Los cinco errores <em>más caros</em></h2>
+  <div class="rule"></div>
+  <div class="err"><span class="num">1.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Comprar solo con fotos y vídeo</b>, sin ninguna valoración técnica presencial antes de comprometerse.</div>
+  <div class="err"><span class="num">2.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Subestimar el coste real de una reforma</b> en un edificio antiguo, sobre todo cubierta, estructura e instalaciones.</div>
+  <div class="err"><span class="num">3.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Firmar arras con un contrato genérico</b>, sin revisión legal adaptada al caso concreto.</div>
+  <div class="err"><span class="num">4.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">No verificar licencias</b> de ocupación ni si las reformas anteriores estaban legalizadas.</div>
+  <div class="err"><span class="num">5.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Coordinar en solitario</b> a inmobiliaria, notario, arquitecto y reformista, sin que se conozcan entre ellos.</div>
+  <div class="box">Ninguno de estos errores es exclusivo de compradores inexpertos. Son, casi siempre, el resultado de comprar a distancia sin alguien que trabaje exclusivamente para ti sobre el terreno.</div>
+</div>
+<div class="foot">Find Your Haven · Guía Costa Brava 2026 <span>4</span></div></div>
+
+<div class="page"><div class="inner">
+  <div class="kicker">Parte 03</div>
+  <h2>Cinco zonas, <em>cinco caracteres</em></h2>
+  <div class="rule"></div>
+  <table class="cols">
+    <tr><td><div class="zone"><h4>Costa Brava</h4><p>Calas, patrimonio y mercado internacional consolidado. Begur, Pals, Llafranc, Cadaqués.</p><div class="price">400K – 1,2M €</div></div></td><td><div class="zone"><h4>Empordà interior</h4><p>Masías y fincas con identidad propia. Peralada, Ullastret, Monells.</p><div class="price">200K – 750K €</div></div></td></tr>
+    <tr><td><div class="zone"><h4>Sitges / Garraf</h4><p>Referencia internacional a un paso de Barcelona.</p><div class="price">350K – 900K €</div></div></td><td><div class="zone"><h4>Maresme</h4><p>Cercanía a Barcelona, carácter costero tranquilo.</p><div class="price">280K – 700K €</div></div></td></tr>
+    <tr><td><div class="zone"><h4>Costa Daurada</h4><p>Sol, playas extensas y potencial por descubrir.</p><div class="price">160K – 450K €</div></div></td><td></td></tr>
+  </table>
+  <p class="note">Precios orientativos de mercado (2025-2026). Sujetos a variación según inmueble, estado y ubicación exacta.</p>
+</div>
+<div class="foot">Find Your Haven · Guía Costa Brava 2026 <span>5</span></div></div>
+
+<div class="page closing"><table><tr><td><div class="wrapc">
+  <img src="../assets/img/brand/fyh-mark-white.png" alt="">
+  <h2>¿Y si el siguiente paso <em>fuera una conversación</em>?</h2>
+  <p>Esta guía es el resumen. Lo que realmente cambia el resultado de una compra es tener a alguien de tu lado desde la primera llamada, sin coste añadido por la coordinación.</p>
+  <p>Escríbenos y te respondemos en 24 horas, con preguntas concretas y un primer paso claro.</p>
+  <div class="mail">hello@findyourhaven.com</div>
+  <div class="web">findyourhaven.com</div>
+</div></td></tr></table>
+<div class="legal">Find Your Haven — Costa Catalana. Guía informativa general; no sustituye asesoramiento legal, fiscal o técnico individualizado.</div></div>
+
+</body></html>

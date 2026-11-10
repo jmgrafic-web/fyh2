@@ -1,0 +1,10 @@
+{%- comment -%} params: a (article), t (strings), badge (bool) {%- endcomment -%}
+<a class="card" href="{{ include.a.url | relative_url }}" data-search="{{ include.a.title | append: ' ' | append: include.a.description | append: ' ' | append: include.a.topic | strip_html | downcase }}">
+  {% if include.a.image %}<div class="card-img"><img src="{{ include.a.image }}" alt="" loading="lazy">{% if include.badge and include.a.start_here %}<span class="card-badge">{{ include.t.hub_start_badge }}</span>{% endif %}</div>{% endif %}
+  <div class="card-body">
+    <span class="eyebrow">{{ include.a.topic }}</span>
+    <h3>{{ include.a.title }}</h3>
+    <p>{{ include.a.description }}</p>
+    <span class="read">{{ include.t.blog_read_more }} →</span>
+  </div>
+</a>

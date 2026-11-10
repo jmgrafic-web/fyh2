@@ -1,0 +1,30 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.strings[lang] %}
+<header class="site-header{% if page.nav_theme == 'light' %} is-light{% endif %}" id="siteHeader">
+  <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; width:100%;">
+    <a class="brand" href="{{ site.baseurl }}/{{ lang }}/">
+      <img class="brand-mark brand-mark--white" src="{{ '/assets/img/brand/fyh-mark-white-sm.png' | relative_url }}" srcset="{{ '/assets/img/brand/fyh-mark-white-sm.png' | relative_url }} 60w, {{ '/assets/img/brand/fyh-mark-white.png' | relative_url }} 200w" sizes="26px" width="25" height="28" alt="" aria-hidden="true">
+      <img class="brand-mark brand-mark--blue" src="{{ '/assets/img/brand/fyh-mark-blue-sm.png' | relative_url }}" srcset="{{ '/assets/img/brand/fyh-mark-blue-sm.png' | relative_url }} 60w, {{ '/assets/img/brand/fyh-mark-blue.png' | relative_url }} 200w" sizes="26px" width="25" height="28" alt="" aria-hidden="true">
+      <span class="brand-name">Find Your <b>Haven</b></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_about }}">{{ t.nav_home }}</a>
+      <a href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_services }}">{{ t.nav_services }}</a>
+      <a href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_process }}">{{ t.nav_process }}</a>
+      <a href="{{ site.baseurl }}/{{ lang }}/blog/" {% if page.url contains '/blog/' %}class="is-active"{% endif %}>{{ t.nav_blog }}</a>
+      <a class="btn btn-dark" href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_contact }}">{{ t.nav_contact }}</a>
+      <span class="lang-switch">
+        {% for l in site.languages %}
+          {% assign alt = page.translations[l.code] %}
+          {% if alt %}{% assign alt_url = alt | relative_url %}{% else %}{% assign alt_url = l.code | prepend: '/' | append: '/' | relative_url %}{% endif %}
+          <a href="{{ alt_url }}" hreflang="{{ l.code }}" lang="{{ l.code }}" class="{% if l.code == lang %}is-current{% endif %}">{{ l.code | upcase }}</a>
+        {% endfor %}
+      </span>
+    </nav>
+  </div>
+</header>

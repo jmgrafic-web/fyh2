@@ -1,0 +1,23 @@
+{%- comment -%}
+  Revista en la portada: pestañas por tema + 3 artículos por pestaña.
+  Parámetros: all (etiqueta «Todos»), read (etiqueta «Leer artículo»).
+  Sin JavaScript, las pestañas son enlaces normales a cada tema de la revista.
+{%- endcomment -%}
+{%- assign lang = page.lang -%}
+{%- assign items = site.articles | where: "lang", lang | sort: "date" | reverse -%}
+<nav class="mag-tabs" aria-label="{{ site.data.strings[lang].nav_blog }}">
+  <a class="mag-tab is-active" href="{{ '/' | append: lang | append: '/blog/' | relative_url }}" data-filter="all" aria-current="true">{{ include.all }}</a>
+  {%- for c in site.data.topics.order %}{% assign cd = site.data.topics.cats[c][lang] %}
+  <a class="mag-tab" href="{{ '/' | append: lang | append: '/blog/' | append: site.data.topics.seg[lang] | append: '/' | append: cd.slug | append: '/' | relative_url }}" data-filter="{{ c }}">{{ cd.name }}</a>
+  {%- endfor %}
+</nav>
+<div class="mag-groups reveal">
+  <div class="mag-grid" data-group="all">
+    {%- for a in items limit: 3 %}{% include home-mcard.html a=a read=include.read %}{% endfor %}
+  </div>
+  {%- for c in site.data.topics.order %}{% assign group = items | where: "category", c %}
+  <div class="mag-grid" data-group="{{ c }}" hidden>
+    {%- for a in group limit: 3 %}{% include home-mcard.html a=a read=include.read %}{% endfor %}
+  </div>
+  {%- endfor %}
+</div>

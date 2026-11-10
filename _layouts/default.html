@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% include seo.html %}
+{% if page.hero_slider %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Find Your Haven",
+  "url": {{ '/' | absolute_url | jsonify }},
+  "logo": {{ '/assets/img/brand/fyh-mark-blue.png' | absolute_url | jsonify }},
+  "image": {{ '/assets/img/og-cover.jpg' | absolute_url | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "email": "hello@findyourhaven.com",
+  "areaServed": ["Costa Brava", "Empordà", "Maresme", "Sitges", "Costa Daurada", "Catalonia"],
+  "knowsLanguage": ["en", "es", "nl", "fr"]
+}
+</script>
+{% endif %}
+{% if page.hero_slider %}
+<!-- Precarga de la primera imagen del hero (la que se ve al entrar), según dispositivo -->
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" href="{{ '/assets/img/hero/hero-terraza-mobile.webp' | relative_url }}" media="(max-width: 760px)">
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" href="{{ '/assets/img/hero/hero-terraza-tablet.webp' | relative_url }}" media="(min-width: 761px) and (max-width: 1100px) and (orientation: portrait)">
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" href="{{ '/assets/img/hero/hero-terraza-desktop.webp' | relative_url }}" media="(min-width: 761px) and (orientation: landscape), (min-width: 1101px)">
+{% endif %}
+<script>(function(h){h.classList.add('js');try{if(sessionStorage.getItem('fyh-intro'))h.classList.add('no-loader');}catch(e){}})(document.documentElement);</script>
+<link rel="preload" href="{{ '/assets/fonts/archivo-latin-400-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/ibm-plex-mono-latin-400-normal.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ '/assets/img/favicon-192.png' | relative_url }}">
+<link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
+</head>
+<body{% if page.home %} class="is-home"{% endif %}>
+{% include header.html %}
+<div class="gridlines" aria-hidden="true"><div class="wrap"><i></i><i></i><i></i><i></i></div></div>
+{{ content }}
+{% include footer.html %}
+<script src="{{ '/assets/js/vendor/gsap.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/vendor/ScrollTrigger.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/vendor/SplitText.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/vendor/lenis.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/contact.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/journal.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/motion.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.strings[lang] %}
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-main">
+      <div>
+        <div class="footer-brand-name">Find Your Haven</div>
+        <p class="footer-brand-desc">{{ t.footer_tagline }}</p>
+      </div>
+      <div class="footer-col">
+        <h4>{{ t.nav_home }}</h4>
+        <a href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_services }}">{{ t.nav_services }}</a>
+        <a href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_process }}">{{ t.nav_process }}</a>
+        <a href="{{ site.baseurl }}/{{ lang }}/blog/">{{ t.nav_blog }}</a>
+      </div>
+      {% assign pillars = site.articles | where: "lang", lang | where: "pillar", true | sort: "pillar_order" %}
+      {% if pillars.size > 0 %}
+      <div class="footer-col">
+        <h4>{{ t.footer_guides }}</h4>
+        {% for a in pillars %}<a href="{{ a.url | relative_url }}">{{ a.footer_label | default: a.title }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <div class="footer-col">
+        <h4>{{ t.footer_contact }}</h4>
+        <a href="mailto:hello@findyourhaven.com">hello@findyourhaven.com</a>
+        <a href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_contact }}">{{ t.cta_contact }}</a>
+        <a href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_partners }}">{{ t.partners_label }}</a>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© {{ site.time | date: "%Y" }} Find Your Haven. {{ t.footer_rights }}</span>
+    <span class="footer-legal"><a href="{{ t.legal_url | relative_url }}">{{ t.legal_label }}</a> &nbsp;·&nbsp; <a href="{{ t.privacy_url | relative_url }}">{{ t.privacy_label }}</a> &nbsp;·&nbsp; <a href="{{ t.cookies_url | relative_url }}">{{ t.cookies_label }}</a> &nbsp;·&nbsp; Mediterranean Coast · Catalonia</span>
+  </div>
+  <div class="footer-mark" aria-hidden="true">Find Your Haven</div>
+</footer>

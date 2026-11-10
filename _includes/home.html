@@ -1,0 +1,258 @@
+{%- comment -%}
+  Portada v10 — una sola plantilla para los 4 idiomas.
+  Textos: _data/home.yml · Estilos: assets/css/main.css (bloque «v10») · Movimiento: assets/js/motion.js
+{%- endcomment -%}
+{%- assign t = site.data.home[page.lang] -%}
+{%- assign L = page.lang -%}
+
+<div class="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-word">Find Your Haven</span>
+    <span class="loader-meta mono">{{ t.region }} — 41°57′N 3°13′E</span>
+    <span class="loader-bar"><i></i></span>
+  </div>
+</div>
+
+<!-- 00 · HERO -->
+<section class="hx" id="inicio" data-hero-slider>
+  <div class="hx-media">
+    <picture>
+      <source media="(max-width: 760px)" srcset="{{ '/assets/img/hero/hero-terraza-mobile.webp' | relative_url }}" type="image/webp">
+      <source media="(max-width: 1100px) and (orientation: portrait)" srcset="{{ '/assets/img/hero/hero-terraza-tablet.webp' | relative_url }}" type="image/webp">
+      <source srcset="{{ '/assets/img/hero/hero-terraza-desktop.webp' | relative_url }}" type="image/webp">
+      <img class="hx-img" src="{{ '/assets/img/hero/hero-terraza-desktop.jpg' | relative_url }}" alt="{{ t.hero_alt }}" width="1920" height="1081" fetchpriority="high" decoding="async">
+    </picture>
+  </div>
+  <div class="hx-shade" aria-hidden="true"></div>
+  <div class="hx-inner wrap">
+    <div class="hx-top mono" data-hx-fade>
+      <span>FYH / {{ L | upcase }}</span>
+      <span>{{ t.region }}</span>
+      <span class="hide-sm">41°57′N 3°13′E</span>
+    </div>
+    <h1 class="hx-title" data-hx-title>
+      {%- for line in t.hero_title %}<span class="ln"><span>{{ line }}</span></span>{% endfor -%}
+    </h1>
+    <div class="hx-bottom">
+      <p class="hx-sub" data-hx-fade>{% for s in t.hero_sub %}<span>{{ s }}</span>{% endfor %}</p>
+      <div class="hx-act" data-hx-fade>
+        <p class="hx-text">{{ t.hero_text }}</p>
+        <div class="hero-cta">
+          <a class="pill pill--light btn-primary" href="#{{ t.a_contact }}" data-float-label="{{ t.hero_cta_short }}" data-magnet>{{ t.hero_cta }} <span class="pill-ico" aria-hidden="true">↗</span></a>
+          <a class="ulink ulink--light" href="#{{ t.a_process }}">{{ t.hero_cta2 }}</a>
+        </div>
+      </div>
+    </div>
+    <span class="hx-scroll mono" aria-hidden="true" data-hx-fade><i></i>{{ t.scroll }}</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-label="{{ t.points | join: ' · ' }}">
+  <div class="ticker-track">
+    {%- for k in (1..2) %}
+    <div class="ticker-group"{% if k == 2 %} aria-hidden="true"{% endif %}>
+      {%- for p in t.points %}<span>{{ p }}</span><i></i>{% endfor -%}
+      {%- for r in t.regions %}<span class="o">{{ r }}</span><i></i>{% endfor -%}
+    </div>
+    {%- endfor %}
+  </div>
+</div>
+
+<!-- 01 · MODELO -->
+<section class="sx sx--light" id="{{ t.a_about }}">
+  <div class="wrap">
+    <div class="sx-label mono" data-up><span class="sx-n">01</span><span>{{ t.model_eyebrow }}</span><span class="sx-rule"></span></div>
+    <h2 class="xl" data-split>{{ t.model_h2 }} <span class="muted">{{ t.model_h2_em }}</span></h2>
+    <div class="mf-grid">
+      <figure class="mf-photo" data-clip>
+        <div class="par" data-parallax><img src="{{ '/assets/img/home/nuestro-modelo.jpg' | relative_url }}" alt="{{ t.model_alt }}" width="1672" height="941" loading="lazy" decoding="async"></div>
+        <figcaption class="mono">FYH — 01</figcaption>
+      </figure>
+      <div class="mf-copy">
+        <p class="lead" data-words>{{ t.model_p1 }}</p>
+        <p class="mf-free" data-up>{{ t.model_p2 }}</p>
+        <a class="ulink" href="#{{ t.a_contact }}" data-up>{{ t.model_cta }} <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <ol class="flow" aria-label="{{ t.model_flow_label }}">
+      <span class="flow-line" aria-hidden="true"><i></i></span>
+      {%- for f in t.flow %}
+      <li class="flow-i" data-up>
+        <span class="flow-dot" aria-hidden="true"></span>
+        <span class="mono flow-n">0{{ forloop.index }}</span>
+        <h3>{{ f.t }}</h3>
+        <p>{{ f.p }}</p>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+
+<!-- 02 · SERVICIOS -->
+<section class="sx sx--dark" id="{{ t.a_services }}">
+  <div class="wrap">
+    <div class="sx-label mono" data-up><span class="sx-n">02</span><span>{{ t.svc_eyebrow }}</span><span class="sx-rule"></span></div>
+    <div class="sx-head">
+      <h2 class="xl" data-split>{{ t.svc_h2 }} <span class="muted">{{ t.svc_h2_em }}</span></h2>
+      <p class="sx-intro" data-up>{{ t.svc_intro }}</p>
+    </div>
+    <ul class="svx">
+      {%- for s in t.services %}
+      {%- assign c = s.url | slice: 0 %}
+      <li class="svx-i" data-up>
+        <a class="svx-row" href="{% if c == '#' %}#{{ t.a_contact }}{% else %}{{ s.url | relative_url }}{% endif %}" data-img="{{ s.img | relative_url }}">
+          <span class="svx-n mono">0{{ forloop.index }}</span>
+          <h3 class="svx-t">{{ s.t }}</h3>
+          <p class="svx-p">{{ s.p }}</p>
+          <span class="svx-go" aria-hidden="true">↗</span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+    <div class="svx-preview" aria-hidden="true"><div class="svx-preview-in"><img src="{{ t.services[0].img | relative_url }}" alt=""></div></div>
+    <div class="sx-cta" data-up><a class="pill pill--light" href="#{{ t.a_contact }}" data-magnet>{{ t.svc_cta }} <span class="pill-ico" aria-hidden="true">↗</span></a></div>
+  </div>
+</section>
+
+<!-- BANDA -->
+<section class="band" aria-label="{{ t.quote | join: ' ' }}">
+  <div class="band-media" data-parallax data-parallax-amount="18"><img src="{{ '/assets/img/home/servicios.jpg' | relative_url }}" alt="{{ t.svc_alt }}" width="1672" height="941" loading="lazy" decoding="async"></div>
+  <div class="band-shade" aria-hidden="true"></div>
+  <p class="band-quote">{% for q in t.quote %}<span class="ln"><span>{{ q }}</span></span>{% endfor %}</p>
+  <span class="band-meta mono">FYH — {{ t.region }}</span>
+</section>
+
+<!-- 03 · PROCESO -->
+<section class="sx sx--light procx" id="{{ t.a_process }}">
+  <div class="wrap">
+    <div class="sx-label mono" data-up><span class="sx-n">03</span><span>{{ t.proc_eyebrow }}</span><span class="sx-rule"></span></div>
+    <div class="sx-head">
+      <h2 class="xl" data-split>{{ t.proc_h2 }} <span class="muted">{{ t.proc_h2_em }}</span></h2>
+      <p class="sx-intro" data-up>{{ t.proc_intro }}</p>
+    </div>
+  </div>
+  <div class="procx-pin">
+    <ol class="procx-track">
+      {%- for s in t.steps %}
+      <li class="pstep">
+        <figure class="pstep-img"><img src="{{ '/assets/img/home/paso-0' | append: forloop.index | append: '.jpg' | relative_url }}" alt="" width="532" height="720" loading="lazy" decoding="async"></figure>
+        <div class="pstep-body">
+          <span class="pstep-n" aria-hidden="true">0{{ forloop.index }}</span>
+          <span class="mono pstep-k">{{ t.step }} 0{{ forloop.index }} / 0{{ forloop.length }}</span>
+          <h3>{{ s.t }}</h3>
+          <p>{{ s.p }}</p>
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+    <div class="procx-bar wrap" aria-hidden="true"><span><i></i></span></div>
+  </div>
+  <div class="wrap sx-cta sx-cta--center" data-up><a class="pill pill--dark" href="#{{ t.a_contact }}" data-magnet>{{ t.proc_cta }} <span class="pill-ico" aria-hidden="true">↗</span></a></div>
+</section>
+
+<!-- 04 · REVISTA -->
+<section class="sx sx--paper magx" id="{{ t.a_journal }}">
+  <div class="wrap">
+    <div class="sx-label mono" data-up><span class="sx-n">04</span><span>{{ t.mag_eyebrow }}</span><span class="sx-rule"></span></div>
+    <div class="sx-head">
+      <h2 class="xl" data-split>{{ t.mag_h2 }}</h2>
+      <p class="sx-intro" data-up>{{ t.mag_intro }}</p>
+    </div>
+    {% include home-magazine.html all=t.mag_all read=t.mag_read %}
+    <div class="sx-cta" data-up><a class="pill pill--dark" href="{{ '/' | append: L | append: '/blog/' | relative_url }}" data-magnet>{{ t.mag_btn }} <span class="pill-ico" aria-hidden="true">↗</span></a></div>
+
+    <div class="guidex" data-up>
+      <div>
+        <p class="mono guidex-k">{{ t.guide_eyebrow }}</p>
+        <h3>{{ t.guide_title }}</h3>
+        <p>{{ t.guide_text }}</p>
+      </div>
+      <form class="guidex-form" action="{{ t.form_action }}" method="POST">
+        <input type="hidden" name="_next" value="{{ t.guide_next | absolute_url }}">
+        <input type="hidden" name="_subject" value="{{ t.guide_subject }}">
+        <div class="line-field"><input type="email" name="Email" placeholder="{{ t.guide_placeholder }}" aria-label="{{ t.guide_placeholder }}" autocomplete="email" required><button type="submit" aria-label="{{ t.guide_btn }}">{{ t.guide_btn }} <span aria-hidden="true">→</span></button></div>
+        <p class="privacy-note">{{ t.guide_note }} <a href="{{ t.privacy_url | relative_url }}">{{ t.guide_note_link }}</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · CONTACTO -->
+<section class="sx sx--light contx" id="{{ t.a_contact }}">
+  <div class="wrap contx-grid">
+    <div class="contx-copy">
+      <div class="sx-label mono" data-up><span class="sx-n">05</span><span>{{ t.contact_eyebrow }}</span><span class="sx-rule"></span></div>
+      <h2 class="xl" data-split>{{ t.contact_h2 }}</h2>
+      <p class="sx-intro" data-up>{{ t.contact_text }}</p>
+      <figure class="contx-photo" data-clip><div class="par" data-parallax><img src="{{ '/assets/img/home/contacto.jpg' | relative_url }}" alt="{{ t.contact_alt }}" width="1672" height="941" loading="lazy" decoding="async"></div></figure>
+    </div>
+    <div class="contx-form" data-up>
+      <form class="contact-form lf" action="{{ t.form_action }}" method="POST" data-contact-form data-error-msg="{{ t.contact_error }}">
+        <input type="hidden" name="_subject" value="{{ t.contact_subject }}">
+        <input type="hidden" name="Idioma" value="{{ t.lang_code }}">
+        <div class="hp-field" aria-hidden="true"><label>{{ t.hp_label }} <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <div class="lf-f"><label for="c-name">{{ t.f_name }}</label><input id="c-name" type="text" name="Nombre" autocomplete="name" required></div>
+        <div class="lf-f"><label for="c-email">{{ t.f_email }}</label><input id="c-email" type="email" name="Email" autocomplete="email" required></div>
+        <div class="lf-f"><label for="c-phone">{{ t.f_phone }} <small>{{ t.f_optional }}</small></label><input id="c-phone" type="tel" name="Teléfono" autocomplete="tel"></div>
+        <div class="lf-f"><label for="c-topic">{{ t.f_topic }}</label>
+          <select id="c-topic" name="Consulta" required>
+            <option value="" selected disabled>{{ t.f_choose }}</option>
+            {%- for o in t.topics %}<option>{{ o }}</option>{% endfor %}
+          </select>
+        </div>
+        <div class="lf-f lf-full"><label for="c-msg">{{ t.f_msg }}</label><textarea id="c-msg" name="Mensaje" rows="4" required></textarea></div>
+        <p class="form-consent">{{ t.consent_a }} <a href="{{ t.privacy_url | relative_url }}">{{ t.consent_link }}</a> {{ t.consent_b }}</p>
+        <div class="form-actions">
+          <button class="pill pill--dark" type="submit" data-sending-label="{{ t.sending }}">{{ t.contact_btn }} <span class="pill-ico" aria-hidden="true">↗</span></button>
+          <p class="form-error" role="alert" hidden></p>
+        </div>
+      </form>
+      <div class="form-success" role="status" tabindex="-1" hidden>
+        <h3>{{ t.contact_ok_h }}</h3>
+        <p>{{ t.contact_ok_p }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 · PARTNERS -->
+<section class="sx sx--dark partx" id="{{ t.a_partners }}">
+  <div class="wrap partx-grid">
+    <div>
+      <div class="sx-label mono" data-up><span class="sx-n">06</span><span>{{ t.partners_eyebrow }}</span><span class="sx-rule"></span></div>
+      <h2 class="xl" data-split>{{ t.partners_h2 }} <span class="muted">{{ t.partners_h2_em }}</span></h2>
+      <p class="sx-intro" data-up>{{ t.partners_text }}</p>
+      <ul class="partx-points mono" data-up>
+        {%- for p in t.partners_points %}<li><span>0{{ forloop.index }}</span>{{ p }}</li>{% endfor %}
+      </ul>
+    </div>
+    <div class="partx-form" data-up>
+      <form class="contact-form lf lf--dark" action="{{ t.form_action }}" method="POST" data-contact-form data-error-msg="{{ t.p_error }}">
+        <input type="hidden" name="_subject" value="{{ t.p_subject }}">
+        <input type="hidden" name="Idioma" value="{{ t.lang_code }}">
+        <input type="hidden" name="Tipo" value="Partner">
+        <div class="hp-field" aria-hidden="true"><label>{{ t.hp_label }} <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
+        <div class="lf-f"><label for="p-name">{{ t.p_name }}</label><input id="p-name" type="text" name="Nombre" autocomplete="name" required></div>
+        <div class="lf-f"><label for="p-company">{{ t.p_company }}</label><input id="p-company" type="text" name="Empresa" autocomplete="organization" required></div>
+        <div class="lf-f"><label for="p-email">{{ t.p_email }}</label><input id="p-email" type="email" name="Email" autocomplete="email" required></div>
+        <div class="lf-f"><label for="p-spec">{{ t.p_spec }}</label>
+          <select id="p-spec" name="Especialidad" required>
+            <option value="" selected disabled>{{ t.f_choose }}</option>
+            {%- for o in t.p_specs %}<option>{{ o }}</option>{% endfor %}
+          </select>
+        </div>
+        <div class="lf-f lf-full"><label for="p-msg">{{ t.p_msg }} <small>{{ t.f_optional }}</small></label><textarea id="p-msg" name="Mensaje" rows="3"></textarea></div>
+        <p class="form-consent">{{ t.p_consent }} <a href="{{ t.privacy_url | relative_url }}">{{ t.consent_link }}</a>.</p>
+        <div class="form-actions">
+          <button class="pill pill--light" type="submit" data-sending-label="{{ t.sending }}">{{ t.p_btn }} <span class="pill-ico" aria-hidden="true">↗</span></button>
+          <p class="form-error" role="alert" hidden></p>
+        </div>
+      </form>
+      <div class="form-success" role="status" tabindex="-1" hidden>
+        <h3>{{ t.p_ok_h }}</h3>
+        <p>{{ t.p_ok_p }}</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl"><head><meta charset="UTF-8">
+<!-- Generado por build_guides.py: no editar a mano (editar head.tpl o los textos del script). -->
+<style>
+
+@page{ margin:0; }
+html{ zoom:1.3; }   /* compensa el escalado (≈77 %) de wkhtmltopdf sin Qt parcheado */
+*{ box-sizing:border-box; margin:0; padding:0; }
+html,body{ width:210mm; background:#F7F5F2; }
+body{ font-family:"FYHDM", Arial, sans-serif; font-size:10.5pt; line-height:1.62; color:#1E1C1A; }
+.page{ position:relative; width:210mm; height:296.6mm; overflow:hidden; page-break-after:always; background:#F7F5F2; }
+.page:last-child{ page-break-after:auto; }
+.inner{ padding:30mm 24mm 0 24mm; }
+
+h1,h2{ font-family:"FYHCG Light", Georgia, serif; font-weight:normal; color:#1E1C1A; }
+b, strong{ font-weight:normal; }
+h2{ font-size:30pt; line-height:1.1; letter-spacing:-.2pt; margin:0 0 7mm; }
+h2 em, h1 em{ font-family:"FYHCG Italic", Georgia, serif; font-style:normal; font-weight:normal; color:#A8794F; }
+h3{ font-family:"FYHCG Medium", Georgia, serif; font-weight:normal; color:#1E1C1A; font-size:15pt; line-height:1.25; margin:7mm 0 1.6mm; }
+.kicker{ font-family:"FYHDM SemiBold", Arial, sans-serif; font-size:8pt; font-weight:normal; letter-spacing:2.2pt; text-transform:uppercase; color:#8C8680; margin-bottom:4mm; }
+p{ margin:0 0 3.6mm; color:#3b3835; }
+.rule{ width:16mm; height:2px; background:#405C70; margin:0 0 7mm; }
+
+.box{ background:#E8E0D4; border-left:3px solid #405C70; padding:5mm 6mm; margin:8mm 0 0; font-size:10.5pt; }
+.num{ font-family:"FYHCG Italic", Georgia, serif; font-style:normal; font-weight:normal; color:#A8794F; font-size:15pt; margin-right:2mm; }
+
+table.cols{ width:100%; border-collapse:collapse; margin-top:3mm; }
+table.cols td{ width:50%; vertical-align:top; padding:0 6mm 7mm 0; }
+.zone{ border-top:1px solid #C9BCAB; padding-top:3.5mm; }
+.zone h4{ font-family:"FYHCG Medium", Georgia, serif; font-weight:normal; font-size:15pt; margin-bottom:1mm; }
+.zone p{ font-size:9.5pt; color:#5A5652; margin:0; }
+.price{ font-family:"FYHDM SemiBold", Arial, sans-serif; font-size:8.5pt; font-weight:normal; letter-spacing:.6pt; color:#405C70; margin-top:1.6mm; }
+.err{ border-top:1px solid #C9BCAB; padding:4.2mm 0; }
+.err:last-of-type{ border-bottom:1px solid #C9BCAB; }
+.err b{ font-family:"FYHDM SemiBold", Arial, sans-serif; font-weight:normal; color:#1E1C1A; }
+
+.foot{ position:absolute; left:24mm; right:24mm; bottom:12mm; font-size:7.5pt; letter-spacing:1.6pt; text-transform:uppercase; color:#8C8680; border-top:1px solid #C9BCAB; padding-top:3mm; }
+.foot span{ float:right; }
+.note{ font-size:8.5pt; color:#8C8680; margin-top:6mm; }
+
+/* portada y cierre (a sangre) */
+.dark{ color:#F7F5F2; }
+.cover{ background:#22333F; box-shadow:8mm 8mm 0 0 #22333F, 0 8mm 0 0 #22333F, 8mm 0 0 0 #22333F; }
+.cover table, .closing table{ width:100%; height:296mm; border-collapse:collapse; }
+.cover td, .closing td{ text-align:center; vertical-align:middle; }
+.cover img{ width:21mm; height:auto; margin:0 auto 12mm; display:block; }
+.cover .eyebrow{ font-family:"FYHDM SemiBold", Arial, sans-serif; font-size:8.5pt; font-weight:normal; letter-spacing:3.2pt; text-transform:uppercase; color:rgba(247,245,242,.7); margin-bottom:9mm; }
+.cover h1{ font-family:"FYHCG Light", Georgia, serif; font-size:50pt; line-height:1.03; letter-spacing:-.6pt; color:#F7F5F2; padding:0 22mm; margin-bottom:7mm; }
+.cover h1 em{ color:#C4956A; }
+.cover .sub{ font-family:"FYHCG Italic", Georgia, serif; font-style:normal; font-size:19pt; color:#C4956A; margin-bottom:26mm; }
+.cover .tag{ font-size:8pt; letter-spacing:2.4pt; text-transform:uppercase; color:rgba(247,245,242,.6); }
+.closing{ background:#405C70; box-shadow:8mm 8mm 0 0 #405C70, 0 8mm 0 0 #405C70, 8mm 0 0 0 #405C70; }
+.closing .wrapc{ padding:0 28mm; }
+.closing img{ width:15mm; height:auto; margin:0 auto 10mm; display:block; }
+.closing h2{ color:#F7F5F2; font-size:34pt; margin-bottom:8mm; }
+.closing h2 em{ color:#E8E0D4; }
+.closing p{ color:rgba(247,245,242,.88); font-size:11pt; }
+.closing .mail{ font-family:"FYHCG Light", Georgia, serif; font-size:21pt; color:#F7F5F2; margin-top:12mm; margin-bottom:1mm; }
+.closing .web{ font-size:9pt; letter-spacing:2pt; text-transform:uppercase; color:rgba(247,245,242,.72); }
+.closing .legal{ position:absolute; left:28mm; right:28mm; bottom:12mm; font-size:7.5pt; line-height:1.5; color:rgba(247,245,242,.6); border-top:1px solid rgba(247,245,242,.25); padding-top:3mm; text-align:left; }
+</style></head>
+<body>
+
+<div class="page cover"><table><tr><td>
+  <img src="../assets/img/brand/fyh-mark-white.png" alt="">
+  <div class="eyebrow">Find Your Haven &nbsp;·&nbsp; Catalaanse kust</div>
+  <h1>Gids voor het kopen aan de <em>Costa Brava</em></h1>
+  <div class="sub">Editie 2026</div>
+  <div class="tag">Geworteld in architectuur. Volledig gefocust op jou.</div>
+</td></tr></table></div>
+
+<div class="page"><div class="inner">
+  <div class="kicker">Voordat je begint</div>
+  <h2>Wat je <em>in deze gids</em> vindt</h2>
+  <div class="rule"></div>
+  <p>Deze gids bundelt, direct en zonder opvulling, wat elke buitenlandse koper moet weten voordat hij een woning koopt aan de Costa Brava of elders aan de Catalaanse kust: het echte proces stap voor stap, de duurste en meest voorkomende fouten, en een eerste blik op de gebieden waar wij werken.</p>
+  <p>Het is geen verkooppraatje. Het is dezelfde afweging die wij bij elke klant maken, samengevat op een paar pagina's.</p>
+  <div class="box"><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Een tip voordat je verder leest.</b> Heb je al een specifieke woning op het oog, dan is het waardevolste advies in deze gids dat van stap 3: ga niet verder zonder een technische beoordeling, bij ons of bij een andere serieuze professional.</div>
+</div>
+<div class="foot">Find Your Haven · Costa Brava Gids 2026 <span>2</span></div></div>
+
+<div class="page"><div class="inner">
+  <div class="kicker">Deel 01</div>
+  <h2>Het echte proces, <em>stap voor stap</em></h2>
+  <div class="rule"></div>
+  <h3 style="margin-top:0"><span class="num">1.</span>Je NIE, voordat je hem nodig hebt</h3>
+  <p>Het is verplicht om te kopen, een bankrekening te openen of nutsvoorzieningen aan te sluiten. Op tijd aanvragen voorkomt dat je een goede woning mist terwijl je op een afspraak wacht.</p>
+  <h3><span class="num">2.</span>Je echte budget, niet alleen de vraagprijs</h3>
+  <p>Tel overdrachtsbelasting, notaris, kadaster en administratiekosten op en, indien van toepassing, vanaf het begin een renovatiemarge.</p>
+  <h3><span class="num">3.</span>Een technische beoordeling voordat je je vastlegt</h3>
+  <p>Structuur, dak, installaties, bouwkundige status. Het is het enige waarmee je kunt onderhandelen op basis van echte gegevens, niet van hoop.</p>
+  <h3><span class="num">4.</span>Reserveringscontract, gecontroleerd door een professional</h3>
+  <p>Boeteclausules, termijnen en een ontbindende voorwaarde voor financiering als je van een hypotheek afhangt: nooit met een generiek vertaald sjabloon.</p>
+  <h3><span class="num">5.</span>Notariële overdracht en wat daarna komt</h3>
+  <p>Inschrijving in het kadaster, overzetten van nutsvoorzieningen, onroerendgoedbelasting (IBI) en, als je er niet permanent woont, fiscale vertegenwoordiging als niet-ingezetene.</p>
+</div>
+<div class="foot">Find Your Haven · Costa Brava Gids 2026 <span>3</span></div></div>
+
+<div class="page"><div class="inner">
+  <div class="kicker">Deel 02</div>
+  <h2>De vijf <em>duurste fouten</em></h2>
+  <div class="rule"></div>
+  <div class="err"><span class="num">1.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Alleen kopen op basis van foto's en video</b>, zonder technische beoordeling ter plaatse voordat je je vastlegt.</div>
+  <div class="err"><span class="num">2.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">De werkelijke renovatiekosten onderschatten</b> in een ouder gebouw, vooral dak, structuur en installaties.</div>
+  <div class="err"><span class="num">3.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Een reserveringscontract tekenen op een generiek sjabloon</b>, zonder juridische controle op maat.</div>
+  <div class="err"><span class="num">4.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Vergunningen niet controleren</b>: de bewoningsvergunning, en of eerdere verbouwingen gelegaliseerd zijn.</div>
+  <div class="err"><span class="num">5.</span><b style="font-family:'FYHDM SemiBold', Arial, sans-serif;">Alles zelf coördineren</b>: makelaar, notaris, architect en aannemer, die elkaar niet kennen.</div>
+  <div class="box">Geen van deze fouten is voorbehouden aan onervaren kopers. Bijna altijd komen ze voort uit op afstand kopen zonder iemand die ter plaatse uitsluitend voor jou werkt.</div>
+</div>
+<div class="foot">Find Your Haven · Costa Brava Gids 2026 <span>4</span></div></div>
+
+<div class="page"><div class="inner">
+  <div class="kicker">Deel 03</div>
+  <h2>Vijf gebieden, <em>vijf karakters</em></h2>
+  <div class="rule"></div>
+  <table class="cols">
+    <tr><td><div class="zone"><h4>Costa Brava</h4><p>Baaien, erfgoed en een gevestigde internationale markt. Begur, Pals, Llafranc, Cadaqués.</p><div class="price">€400K – €1,2M</div></div></td><td><div class="zone"><h4>Binnenland Empordà</h4><p>Boerderijen en landgoederen met een eigen karakter. Peralada, Ullastret, Monells.</p><div class="price">€200K – €750K</div></div></td></tr>
+    <tr><td><div class="zone"><h4>Sitges / Garraf</h4><p>Een internationaal baken op korte afstand van Barcelona.</p><div class="price">€350K – €900K</div></div></td><td><div class="zone"><h4>Maresme</h4><p>Dicht bij Barcelona, met een rustig kustkarakter.</p><div class="price">€280K – €700K</div></div></td></tr>
+    <tr><td><div class="zone"><h4>Costa Daurada</h4><p>Zon, lange stranden en onaangeboord potentieel.</p><div class="price">€160K – €450K</div></div></td><td></td></tr>
+  </table>
+  <p class="note">Indicatieve marktprijzen (2025-2026). Onder voorbehoud van wijzigingen naargelang woning, staat en exacte ligging.</p>
+</div>
+<div class="foot">Find Your Haven · Costa Brava Gids 2026 <span>5</span></div></div>
+
+<div class="page closing"><table><tr><td><div class="wrapc">
+  <img src="../assets/img/brand/fyh-mark-white.png" alt="">
+  <h2>En als de volgende stap <em>een gesprek</em> was?</h2>
+  <p>Deze gids is de samenvatting. Wat het resultaat van een aankoop echt verandert, is vanaf het eerste telefoontje iemand aan je zijde hebben, zonder extra kosten voor de coördinatie.</p>
+  <p>Schrijf ons en we antwoorden binnen 24 uur, met concrete vragen en een duidelijke eerste stap.</p>
+  <div class="mail">hello@findyourhaven.com</div>
+  <div class="web">findyourhaven.com</div>
+</div></td></tr></table>
+<div class="legal">Find Your Haven — Catalaanse kust. Algemene informatieve gids; vervangt geen individueel juridisch, fiscaal of technisch advies.</div></div>
+
+</body></html>

@@ -1,0 +1,120 @@
+---
+layout: default
+---
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.strings[lang] %}
+{% assign dd = page.date | date: "%-d" %}
+{% assign mi = page.date | date: "%-m" | minus: 1 %}
+{% assign mon = t.months[mi] %}
+{% assign yy = page.date | date: "%Y" %}
+{% assign cd = site.data.topics.cats[page.category][lang] %}
+{% assign hub = '/' | append: lang | append: '/blog/' | append: site.data.topics.seg[lang] | append: '/' | append: cd.slug | append: '/' %}
+{% assign nice_date = t.date_format | replace: "{d}", dd | replace: "{m}", mon | replace: "{y}", yy %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "inLanguage": {{ lang | jsonify }},
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  "image": {{ page.image | jsonify }},
+  "articleSection": {{ page.topic | jsonify }},
+  "mainEntityOfPage": {{ page.url | absolute_url | jsonify }},
+  "author": { "@type": "Organization", "name": "Find Your Haven", "url": {{ '/' | absolute_url | jsonify }} },
+  "publisher": { "@type": "Organization", "name": "Find Your Haven", "logo": { "@type": "ImageObject", "url": {{ '/assets/img/brand/fyh-mark-blue.png' | absolute_url | jsonify }} } }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": {{ t.crumb_home | jsonify }}, "item": {{ lang | prepend: '/' | append: '/' | absolute_url | jsonify }} },
+    { "@type": "ListItem", "position": 2, "name": {{ t.nav_blog | jsonify }}, "item": {{ lang | prepend: '/' | append: '/blog/' | absolute_url | jsonify }} },
+    {% if cd %}{ "@type": "ListItem", "position": 3, "name": {{ cd.name | jsonify }}, "item": {{ hub | absolute_url | jsonify }} },
+    { "@type": "ListItem", "position": 4, "name": {{ page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }} }{% else %}{ "@type": "ListItem", "position": 3, "name": {{ page.title | jsonify }}, "item": {{ page.url | absolute_url | jsonify }} }{% endif %}
+  ]
+}
+</script>
+
+<article>
+  <div class="article-hero">
+    {% if page.image %}
+    <div class="hero-bg"><img src="{{ page.image }}" alt="" loading="eager"></div>
+    {% endif %}
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="{{ lang | prepend: '/' | append: '/' | relative_url }}">{{ t.crumb_home }}</a><span>/</span>
+        <a href="{{ lang | prepend: '/' | append: '/blog/' | relative_url }}">{{ t.nav_blog }}</a>{% if cd %}<span>/</span>
+        <a href="{{ hub | relative_url }}">{{ cd.name }}</a>{% endif %}
+      </nav>
+      <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ nice_date }}</time> · {% if cd %}<a class="meta-topic" href="{{ hub | relative_url }}">{{ page.topic }}</a>{% else %}{{ page.topic }}{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap article-body">
+      {{ content }}
+
+      <div class="article-cta">
+        <h3>{{ page.cta_title | default: t.cta_contact }}</h3>
+        <p>{{ page.cta_body }}</p>
+        <a class="btn btn-outline" href="{{ site.baseurl }}/{{ lang }}/#{{ t.a_contact }}">{{ t.cta_contact }} →</a>
+      </div>
+
+      <p class="mt-lg">{% if cd %}<a href="{{ hub | relative_url }}">← {{ cd.name }}</a> · {% endif %}<a href="{{ site.baseurl }}/{{ lang }}/blog/">{{ t.blog_back }}</a></p>
+    </div>
+  </div>
+</article>
+
+{% comment %} ---- Lecturas relacionadas: primero las elegidas a mano (related:), luego las del mismo tema, luego las más recientes ---- {% endcomment %}
+{% assign pool = site.articles | where: "lang", lang | sort: "date" | reverse %}
+{% assign shown = "" | split: "," %}
+{% if page.related %}
+  {% for r in page.related %}
+    {% assign hit = pool | where: "url", r | first %}
+    {% if hit and hit.url != page.url and shown.size < 3 %}{% assign shown = shown | push: hit %}{% endif %}
+  {% endfor %}
+{% endif %}
+{% if shown.size < 3 %}
+  {% for a in pool %}
+    {% if shown.size < 3 and a.url != page.url and a.topic == page.topic %}
+      {% assign dup = false %}{% for s in shown %}{% if s.url == a.url %}{% assign dup = true %}{% endif %}{% endfor %}
+      {% unless dup %}{% assign shown = shown | push: a %}{% endunless %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% if shown.size < 3 %}
+  {% for a in pool %}
+    {% if shown.size < 3 and a.url != page.url %}
+      {% assign dup = false %}{% for s in shown %}{% if s.url == a.url %}{% assign dup = true %}{% endif %}{% endfor %}
+      {% unless dup %}{% assign shown = shown | push: a %}{% endunless %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if shown.size > 0 %}
+<section class="section section--sand related">
+  <div class="wrap">
+    <p class="eyebrow">{{ t.nav_blog }}</p>
+    <h2>{{ t.related_title }}</h2>
+    <div class="article-grid">
+      {% for a in shown %}
+      <a class="card" href="{{ a.url | relative_url }}">
+        {% if a.image %}<div class="card-img"><img src="{{ a.image }}" alt="" loading="lazy"></div>{% endif %}
+        <div class="card-body">
+          <span class="eyebrow">{{ a.topic }}</span>
+          <h3>{{ a.title }}</h3>
+          <p>{{ a.description }}</p>
+          <span class="read">{{ t.blog_read_more }} →</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
